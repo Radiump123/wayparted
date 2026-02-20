@@ -93,7 +93,7 @@ Win_GParted::Win_GParted( const std::vector<Glib::ustring> & user_devices )
 	TOOLBAR_APPLY = -1;
 
 	//==== GUI =========================
-	this ->set_title( _("GParted") );
+	this ->set_title( _("Wayparted") );
 	this ->set_default_size( 775, 500 );
 	
 	try
@@ -194,7 +194,7 @@ void Win_GParted::init_menubar()
 	menu->append(*item);
 
 	item = Gtk::manage(new GParted::Menu_Helpers::MenuElem(
-		_("_GParted"), *menu));
+		_("_Wayparted"), *menu));
 	menubar_main.append(*item);
 
 	//edit
@@ -1165,7 +1165,7 @@ bool Win_GParted::Quit_Check_Operations()
 	if (m_operations.size())
 	{
 		Gtk::MessageDialog dialog( *this,
-					   _("Quit GParted?"),
+					   _("Quit Wayparted?"),
 					   false,
 					   Gtk::MESSAGE_QUESTION,
 					   Gtk::BUTTONS_NONE,
@@ -1585,7 +1585,7 @@ void Win_GParted::combo_devices_changed()
 		m_current_device = old_current_device;
 	if (m_current_device >= m_devices.size())
 		m_current_device = 0;
-	set_title(Glib::ustring::compose(_("%1 - GParted"), m_devices[m_current_device].get_path()));
+	set_title(Glib::ustring::compose(_("%1 - Wayparted"), m_devices[m_current_device].get_path()));
 
 	//refresh label_device_info
 	Fill_Label_Device_Info();
@@ -1663,7 +1663,7 @@ void Win_GParted::menu_wayparted_refresh_devices()
 	//if no devices were detected we disable some stuff and show a message in the statusbar
 	if (m_devices.empty())
 	{
-		this ->set_title( _("GParted") );
+		this ->set_title( _("Wayparted") );
 		combo_devices .hide() ;
 		
 		mainmenu_items[MENU_DEVICES]->set_sensitive(false);
@@ -1823,7 +1823,7 @@ void Win_GParted::show_help(const Glib::ustring & filename /* E.g., "wayparted" 
 	if (Glib::find_program_in_path("yelp").empty())
 	{
 		Gtk::MessageDialog errorDialog(*this,
-		                               _("Unable to open GParted Manual help file"),
+		                               _("Unable to open Wayparted Manual help file"),
 		                               false, Gtk::MESSAGE_ERROR, Gtk::BUTTONS_OK, true);
 		Glib::ustring sec_text(_("Command yelp not found."));
 		sec_text.append("\n");
@@ -1849,7 +1849,7 @@ void Win_GParted::show_help(const Glib::ustring & filename /* E.g., "wayparted" 
 	if (error != nullptr)
 	{
 		Gtk::MessageDialog errorDialog(*this,
-		                               _("Failed to open GParted Manual help file"),
+		                               _("Failed to open Wayparted Manual help file"),
 		                               false,
 		                               Gtk::MESSAGE_ERROR,
 		                               Gtk::BUTTONS_OK,
@@ -1880,7 +1880,7 @@ void Win_GParted::menu_help_contents()
 	tmp_msg += "\n" ;
 	tmp_msg += "https://wayparted.org";
 	dialog .set_secondary_text( tmp_msg ) ;
-	dialog .set_title( _("GParted Manual") );
+	dialog .set_title( _("Wayparted Manual") );
 	dialog .run() ;
 #endif
 }
@@ -1892,7 +1892,7 @@ void Win_GParted::menu_help_about()
 	Gtk::AboutDialog dialog ;
 	dialog .set_transient_for( *this ) ;
 
-	dialog.set_program_name(_("GParted"));
+	dialog.set_program_name(_("Wayparted"));
 	dialog .set_logo_icon_name( "wayparted" ) ;
 	dialog .set_version( VERSION ) ;
 	dialog .set_comments( _( "GNOME Partition Editor" ) ) ;
@@ -2110,7 +2110,7 @@ void Win_GParted::activate_resize()
 					                , operation->get_partition_original().get_path() );
 			tmp_msg += _("  Failure to boot is most likely to occur if you move the GNU/Linux partition containing /boot, or if you move the Windows system partition C:.");
 			tmp_msg += "\n";
-			tmp_msg += _("You can learn how to repair the boot configuration in the GParted FAQ.");
+			tmp_msg += _("You can learn how to repair the boot configuration in the Wayparted FAQ.");
 			tmp_msg += "\n";
 			tmp_msg += "https://wayparted.org/faq.php";
 			tmp_msg += "\n\n";

@@ -7,8 +7,8 @@ if BUILD_HELP_DOC
   SUBDIRS += help
 endif
 
-DESKTOP_IN_IN_FILES = gparted.desktop.in.in
-DESKTOP_IN_FILES = gparted.desktop.in
+DESKTOP_IN_IN_FILES = wayparted.desktop.in.in
+DESKTOP_IN_FILES = wayparted.desktop.in
 DESKTOP_FILES =$(DESKTOP_IN_FILES:.desktop.in=.desktop)
 desktopdir = $(datadir)/applications
 desktop_DATA = $(DESKTOP_FILES)
@@ -16,7 +16,7 @@ desktop_DATA = $(DESKTOP_FILES)
 $(DESKTOP_FILES): $(DESKTOP_IN_FILES)
 	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-APPSTREAM_IN_FILES = gparted.appdata.xml.in
+APPSTREAM_IN_FILES = wayparted.appdata.xml.in
 APPSTREAM_FILES =$(APPSTREAM_IN_FILES:.xml.in=.xml)
 appstreamdir = $(datadir)/metainfo
 appstream_DATA = $(APPSTREAM_FILES)
@@ -36,19 +36,19 @@ if INSTALL_POLKIT_ACTIONS
   polkit_action_DATA = $(polkit_action_FILES)
 endif
 
-bin_SCRIPTS = gparted
+bin_SCRIPTS = wayparted
 CLEANFILES = $(bin_SCRIPTS) $(DESKTOP_IN_FILES) $(polkit_action_in_FILES)
 
 do_subst = sed -e 's,[@]libexecdir[@],$(libexecdir),g' \
 	-e 's,[@]bindir[@],$(bindir),g' \
 	-e 's,[@]gksuprog[@],$(GKSUPROG),g'
 
-gparted.desktop.in:  gparted.desktop.in.in Makefile
-	$(do_subst) < $(srcdir)/gparted.desktop.in.in > gparted.desktop.in
+wayparted.desktop.in:  wayparted.desktop.in.in Makefile
+	$(do_subst) < $(srcdir)/wayparted.desktop.in.in > wayparted.desktop.in
 
-gparted:  gparted.in Makefile
-	$(do_subst) < $(srcdir)/gparted.in > gparted
-	chmod +x gparted
+wayparted:  wayparted.in Makefile
+	$(do_subst) < $(srcdir)/wayparted.in > wayparted
+	chmod +x wayparted
 
 org.gnome.gparted.policy.in: org.gnome.gparted.policy.in.in Makefile
 	$(do_subst) < $(srcdir)/org.gnome.gparted.policy.in.in > org.gnome.gparted.policy.in
@@ -82,7 +82,7 @@ EXTRA_DIST =			\
 	$(DESKTOP_IN_IN_FILES)	\
 	$(DESKTOP_FILES)	\
 	$(polkit_action_in_in_FILES)  \
-	gparted.in
+	wayparted.in
 
 DISTCLEANFILES =		\
 	$(appstream_DATA)	\
