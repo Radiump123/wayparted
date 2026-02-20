@@ -10,8 +10,8 @@
 
     <vendor>The Wayparted Project</vendor>
     <vendor_url>https://wayparted.org</vendor_url>
-    <icon_name>wayparted</icon_name>
-    <action id="org.gnome.wayparted">
+    <icon_name>gparted</icon_name>
+    <action id="org.gnome.gparted">
 
         <description>Run Wayparted as root</description>
         <message>Authentication is required to run the Wayparted Partition Editor as root</message>
