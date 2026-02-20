@@ -23,7 +23,7 @@ PKG_CHECK_EXISTS
 dnl======================
 dnl Find graphical privilege escalation program
 dnl======================
-dnl Check for pkexec >= 0.102 for it's ability to run X11 apps.
+dnl Check for pkexec >= 0.102 for support required by this Wayland-first launcher.
 AM_CONDITIONAL([INSTALL_POLKIT_ACTIONS], false)
 PKEXEC_REQUIRED_VERSION='0.102'
 AC_MSG_CHECKING([for pkexec >= $PKEXEC_REQUIRED_VERSION])
@@ -230,24 +230,6 @@ else
 fi
 
 
-dnl Check whether to explicitly grant root access to the display.
-AC_ARG_ENABLE(
-	[xhost-root],
-	AS_HELP_STRING(
-		[--enable-xhost-root],
-		[enable explicitly granting root access to the display @<:@default=disabled@:>@]),
-	[enable_xhost_root=$enableval],
-	[enable_xhost_root=no]
-)
-
-AC_MSG_CHECKING([whether to explicitly grant root access to the display])
-if test "x$enable_xhost_root" = 'xyes'; then
-	AC_MSG_RESULT([yes])
-else
-	AC_MSG_RESULT([no])
-fi
-AC_SUBST([ENABLE_XHOST_ROOT], $enable_xhost_root)
-
 
 AC_CONFIG_FILES([
 Makefile
@@ -277,8 +259,6 @@ echo ""
 echo "                      Build help documentation?  :  $enable_doc"
 echo ""
 echo "           Use native libparted dmraid support?  :  $enable_libparted_dmraid"
-echo ""
-echo "   Explicitly grant root access to the display?  :  $enable_xhost_root"
 echo ""
 echo " If all settings are OK, type make and then (as root) make install"
 echo "========================================================================"
