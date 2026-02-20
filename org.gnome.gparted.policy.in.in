@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<!--
+  Legacy filename retained to reduce merge conflicts with branches that still
+  touch org.gnome.gparted.policy.in.in. Canonical policy template is
+  org.gnome.wayparted.policy.in.in.
+-->
+<policyconfig>
+
+    <vendor>The Wayparted Project</vendor>
+    <vendor_url>https://wayparted.org</vendor_url>
+    <icon_name>wayparted</icon_name>
+    <action id="org.gnome.wayparted">
+
+        <description>Run Wayparted as root</description>
+        <message>Authentication is required to run the Wayparted Partition Editor as root</message>
+        <defaults>
+            <allow_any>auth_admin</allow_any>
+            <allow_inactive>auth_admin</allow_inactive>
+            <allow_active>auth_admin</allow_active>
+        </defaults>
+        <annotate key="org.freedesktop.policykit.exec.path">@bindir@/wayparted</annotate>
+        <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+
+    </action>
+
+</policyconfig>
