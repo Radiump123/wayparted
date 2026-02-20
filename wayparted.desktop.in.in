@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=GParted
+Name=Wayparted
 GenericName=Partition Editor
-X-GNOME-FullName=GParted Partition Editor
+X-GNOME-FullName=Wayparted Partition Editor
 Comment=Create, reorganize, and delete partitions
-Exec=@bindir@/gparted %f
+Exec=@bindir@/wayparted %f
 Icon=gparted
 Terminal=false
 Type=Application

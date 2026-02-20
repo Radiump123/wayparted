@@ -1,79 +1,76 @@
 #!/bin/sh
-#     Name:  gparted
-#  Purpose:  Perform appropriate startup of GParted executable gpartedbin.
+#     Name:  wayparted
+#  Purpose:  Perform appropriate startup of Wayparted executable waypartedbin.
 #
 #            The purpose of these startup methods is to prevent
 #            devices from being automounted, and to ensure only one
-#            instance of GParted is running.  File system problems can
+#            instance of Wayparted is running.  File system problems can
 #            occur if devices are mounted prior to the completion of
-#            GParted's operations, or if multiple partition editing
+#            Wayparted's operations, or if multiple partition editing
 #            tools are in use concurrently.
 #
 # Copyright (C) 2008, 2009, 2010, 2013, 2015 Curtis Gedak
 #
-#  This file is part of GParted.
+#  This file is part of Wayparted.
 #
-#  GParted is free software; you can redistribute it and/or modify
+#  Wayparted is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation; either version 2 of the License, or
 #  (at your option) any later version.
 #
-#  GParted is distributed in the hope that it will be useful,
+#  Wayparted is distributed in the hope that it will be useful,
 #  but WITHOUT ANY WARRANTY; without even the implied warranty of
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 #
 #  You should have received a copy of the GNU General Public License
-#  along with GParted.  If not, see <http://www.gnu.org/licenses/>.
+#  along with Wayparted.  If not, see <http://www.gnu.org/licenses/>.
 #
 
 #
-#  Only permit one instance of GParted to execute at a time
+#  Only permit one instance of Wayparted to execute at a time
 #
-if pidof gpartedbin 1> /dev/null; then
-	echo "The process gpartedbin is already running."
-	echo "Only one gpartedbin process is permitted."
+if pidof waypartedbin 1> /dev/null; then
+	echo "The process waypartedbin is already running."
+	echo "Only one waypartedbin process is permitted."
 	exit 1
 fi
 
 #
-#  Define base command for executing GParted
+#  Define base command for executing Wayparted
 #
-BASE_CMD="@libexecdir@/gpartedbin $*"
+BASE_CMD="@libexecdir@/waypartedbin $*"
 
 #
-#  For non-root users try to get authorisation to run GParted as root.
+#  For non-root users try to get authorisation to run Wayparted as root.
 #
 if test "x`id -u`" != "x0"; then
 	#
-	#  If there is no configured SU program run gpartedbin as
+	#  If there is no configured SU program run waypartedbin as
 	#  non-root to display the graphical error about needing root
 	#  privileges.
 	#
 	if test "x@gksuprog@" = "x"; then
-		echo "Root privileges are required for running gparted."
+		echo "Root privileges are required for running wayparted."
 		$BASE_CMD
 		exit 1
 	fi
 
 	#
-	# Run gparted as root.
+	# Run wayparted as root.
 	#
 	case "@gksuprog@" in
 		pkexec*)
 			# Preserve Wayland session environment for native Wayland launch.
-			# Keep X11 fallback variables in case GTK falls back to Xwayland.
 			pkexec --disable-internal-agent env \
 				GDK_BACKEND="${GDK_BACKEND:-wayland}" \
 				WAYLAND_DISPLAY="${WAYLAND_DISPLAY}" \
 				XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR}" \
 				XDG_SESSION_TYPE="${XDG_SESSION_TYPE}" \
-				DISPLAY="${DISPLAY}" \
-				XAUTHORITY="${XAUTHORITY}" \
-				'@bindir@/gparted' "$@"
+				'@bindir@/wayparted' "$@"
 			;;
 		*)
-			@gksuprog@ '@bindir@/gparted' "$@"
+			@gksuprog@ '@bindir@/wayparted' "$@"
 			;;
 	esac
 	status=$?
@@ -206,7 +203,7 @@ done
 #  daemons are running.
 #  Else use udisks if binary exists and daemon is running.
 #  Otherwise use hal-lock for invocation if binary exists and daemon is running.
-#  If the above checks fail then simply run gpartedbin.
+#  If the above checks fail then simply run waypartedbin.
 #
 if test "x$HAVE_UDISKS2_INHIBIT" = "xyes"; then
 	$UDISKS2_INHIBIT_BIN $BASE_CMD

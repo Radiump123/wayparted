@@ -1,4 +1,4 @@
-AC_INIT([gparted],[1.8.0-git],[https://gitlab.gnome.org/GNOME/gparted/issues])
+AC_INIT([wayparted],[1.8.0-git],[https://wayparted.org/issues])
 AC_PREREQ([2.50])
 
 AC_CONFIG_SRCDIR([src/main.cc])
@@ -50,7 +50,7 @@ fi
 dnl======================
 dnl i18n stuff
 dnl======================
-GETTEXT_PACKAGE=gparted
+GETTEXT_PACKAGE=wayparted
 AC_SUBST([GETTEXT_PACKAGE])
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE], "$GETTEXT_PACKAGE", [description])
 
