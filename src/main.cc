@@ -30,9 +30,6 @@ int main( int argc, char *argv[] )
 
 	Gtk::Main kit( argc, argv ) ;
 
-	//Set WM_CLASS X Window property for correct naming under GNOME Shell
-	gdk_set_program_class( "GParted" ) ;
-
 	//i18n
 	bindtextdomain( GETTEXT_PACKAGE, GNOMELOCALEDIR ) ;
 	bind_textdomain_codeset( GETTEXT_PACKAGE, "UTF-8" ) ;
@@ -44,12 +41,12 @@ int main( int argc, char *argv[] )
 	//check UID
 	if ( getuid() != 0 )
 	{
-		const Glib::ustring error_msg(_("Root privileges are required for running GParted"));
+		const Glib::ustring error_msg(_("Root privileges are required for running Wayparted"));
 		std::cerr << error_msg << std::endl;
 
 		Gtk::MessageDialog dialog(error_msg, false, Gtk::MESSAGE_ERROR, Gtk::BUTTONS_OK);
 		dialog .set_secondary_text(
-				_("Since GParted is a powerful tool capable of destroying partition tables and vast amounts of data, only root may run it.") ) ;
+				_("Since Wayparted is a powerful tool capable of destroying partition tables and vast amounts of data, only root may run it.") ) ;
 		
 		dialog .run() ;
 		exit(EXIT_FAILURE);

@@ -638,7 +638,7 @@ INSTANTIATE_TEST_SUITE_P(My,
 int main(int argc, char** argv)
 {
 	printf("Running main() from %s\n", __FILE__);
-	GParted::ensure_x11_display(argc, argv);
+	GParted::ensure_gui_display(argc, argv);
 
 	// Initialise threading in GParted to allow FileSystem interface classes to
 	// successfully use Utils:: and OperationDetail::execute_command().  Must be

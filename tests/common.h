@@ -35,7 +35,7 @@ namespace GParted
 const size_t BinaryStringChunkSize = 16;
 
 std::string binary_string_to_print(size_t offset, const char* s, size_t len);
-void ensure_x11_display(int argc, char** argv);
+void ensure_gui_display(int argc, char** argv);
 
 
 }  // namespace GParted

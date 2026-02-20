@@ -66,7 +66,7 @@ std::string binary_string_to_print(size_t offset, const char* s, size_t len)
 }
 
 
-// Re-execute current executable using xvfb-run so that it provides a virtual X11 display.
+// Re-execute current executable using xvfb-run so that it provides a virtual GUI display.
 static void exec_using_xvfb_run(int argc, char** argv)
 {
 	// argc+2 = Space for "xvfb-run" command, existing argc strings plus nullptr.
@@ -98,8 +98,8 @@ static void exec_using_xvfb_run(int argc, char** argv)
 }
 
 
-// Ensure there is an X11 display, providing a virtual one if needed.
-void ensure_x11_display(int argc, char** argv)
+// Ensure there is a GUI display, providing a virtual one if needed.
+void ensure_gui_display(int argc, char** argv)
 {
 	const char* display = getenv("DISPLAY");
 	if (display == nullptr)

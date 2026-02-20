@@ -126,7 +126,7 @@ b. Building from Source
       sudo zypper install gnome-common gcc-c++ libuuid-devel \
                           parted-devel gtkmm3-devel make polkit-devel
 
-   Again, build GParted with the default configuration and install into
+   Again, build Wayparted with the default configuration and install into
    the default location of /usr/local using:
       ./configure
       make
@@ -140,11 +140,6 @@ b. Building from Source
    dmraid support use the --enable-libparted-dmraid flag:
       E.g., ./configure --enable-libparted-dmraid
 
-   If you wish to build GParted to allow it to use xhost to grant root
-   access to the X11 server use the --enable-xhost-root flag.  This is
-   required to allow GParted to display under Wayland.
-      ./configure --enable-xhost-root
-
    Please note that more than one configure flag can be used:
       E.g., ./configure --disable-doc --enable-libparted-dmraid
 
@@ -152,7 +147,7 @@ b. Building from Source
 
 c. Installing polkit's Action File
 
-   GParted needs to run as root therefore it needs a graphical switch
+   Wayparted needs to run as root therefore it needs a graphical switch
    user program to allow normal users to run it.  Most desktops now use
    polkit as their preferred authorisation mechanism.  Therefore
    ./configure looks for polkit's pkexec as the first choice with
@@ -175,13 +170,13 @@ c. Installing polkit's Action File
 
       checking for pkexec >= 0.102... not found
 
-   When GParted is configured with prefix /usr (using command
+   When Wayparted is configured with prefix /usr (using command
    ./configure --prefix=/usr) then make install will automatically
    install the polkit action file into the correct directory and no
    further steps need to be taken.  This is typically the case for
-   distribution builds of GParted.
+   distribution builds of Wayparted.
 
-   However when GParted is configured with the default prefix of
+   However when Wayparted is configured with the default prefix of
    /usr/local, or any prefix other than /usr, then the polkit action
    file has to be manually installed into the correct directory.  Also
    it should have a unique file name to avoid overwriting the action
@@ -325,6 +320,3 @@ system.  These commands include:
                      udev device properties
    yelp            - used to display help manual
                      (requires gvfs to be able to launch yelp)
-   xhost           - used to grant root access to the X11 server, only
-                     when configured to do so
-
