@@ -17,6 +17,12 @@
 
 #include "Partition.h"
 
+#include "Utils.h"
+
+#include <algorithm>
+#include <vector>
+#include <glibmm/ustring.h>
+
 
 namespace GParted
 {
@@ -56,9 +62,10 @@ void Partition::Reset()
 	inside_extended = busy = strict_start = false ;
 	fs_readonly = false;
 	logicals .clear() ;
-	flags .clear() ;
+	m_flags.clear();
 	mountpoints .clear() ;
 }
+
 
 void Partition::Set( const Glib::ustring & device_path,
                      const Glib::ustring & partition,
@@ -294,30 +301,42 @@ void Partition::set_filesystem_label( const Glib::ustring & filesystem_label )
 
 bool Partition::is_flag_set(const Glib::ustring& flag) const
 {
-	for (unsigned int i = 0; i < flags.size(); i++)
-		if (flags[i] == flag)
+	for (unsigned int i = 0; i < m_flags.size(); i++)
+		if (m_flags[i] == flag)
 			return true;
 	return false;
+}
+
+
+void Partition::set_only_flag(const Glib::ustring& flag)
+{
+	m_flags.clear();
+	m_flags.push_back(flag);
 }
 
 
 void Partition::set_flag(const Glib::ustring& flag)
 {
 	if (! is_flag_set(flag))
-		flags.push_back(flag);
+		m_flags.push_back(flag);
 }
 
 
-void Partition::clear_flag(const Glib::ustring& flag)
+void Partition::clear_all_flags()
 {
-	for (unsigned int i = 0; i < flags.size(); i++)
-	{
-		if (flags[i] == flag)
-		{
-			flags.erase(flags.begin() + i);
-			return;
-		}
-	}
+	m_flags.clear();
+}
+
+
+const std::vector<Glib::ustring>& Partition::get_flags() const
+{
+	return m_flags;
+}
+
+
+void Partition::set_flags(const std::vector<Glib::ustring>& flags)
+{
+	m_flags = flags;
 }
 
 

@@ -23,10 +23,12 @@
 #ifndef GPARTED_PARTITION_H
 #define GPARTED_PARTITION_H
 
-#include "Utils.h"
+
 #include "PartitionVector.h"
+#include "Utils.h"
 
 #include <glibmm/ustring.h>
+#include <vector>
 
 
 namespace GParted
@@ -127,8 +129,11 @@ public:
 	const Glib::ustring& get_filesystem_label() const;
 	void set_filesystem_label( const Glib::ustring & filesystem_label );
 	bool is_flag_set(const Glib::ustring& flag) const;
+	void set_only_flag(const Glib::ustring& flag);
 	void set_flag(const Glib::ustring& flag);
-	void clear_flag(const Glib::ustring& flag);
+	void clear_all_flags();
+	const std::vector<Glib::ustring>& get_flags() const;
+	void set_flags(const std::vector<Glib::ustring>& flags);
 
 	// Message accessors.  Messages are stored locally and accessed globally.
 	// Stored locally means the messages are stored in the Partition object to which
@@ -176,7 +181,6 @@ public:
 	bool inside_extended;
 	bool busy;
 	bool fs_readonly;  // Is the file system mounted read-only?
-	std::vector<Glib::ustring> flags ;
 
 	PartitionVector logicals;
 
@@ -192,6 +196,7 @@ private:
 	Sector calc_significant_unallocated_sectors() const ;
 
 	Glib::ustring path;
+	std::vector<Glib::ustring> m_flags;
 	std::vector<Glib::ustring> mountpoints ;
 	bool have_filesystem_label;
 	Glib::ustring filesystem_label;

@@ -217,7 +217,7 @@ void Dialog_Partition_New::set_data( const Device & device,
 }
 
 
-const Partition & Dialog_Partition_New::Get_New_Partition()
+const Partition& Dialog_Partition_New::get_new_partition()
 {
 	g_assert(m_new_partition != nullptr);  // Bug: Not initialised by constructor calling set_data()
 
@@ -307,10 +307,7 @@ const Partition & Dialog_Partition_New::Get_New_Partition()
 			break;
 	}
 
-	// Set partition flag so preview matches what is applied by
-	// GParted_Core::set_partition_type() for LVM2 PV file systems.
-	if (m_new_partition->fstype == FS_LVM2_PV)
-		m_new_partition->set_flag("lvm");
+	GParted_Core::compose_partition_flags(*m_new_partition, m_device.disktype);
 
 	m_new_partition->free_space_before =   Sector(spinbutton_before.get_value_as_int())
 	                                     * (MEBIBYTE / m_new_partition->sector_size);

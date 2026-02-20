@@ -1897,8 +1897,8 @@ void Win_GParted::menu_help_about()
 	dialog .set_version( VERSION ) ;
 	dialog .set_comments( _( "GNOME Partition Editor" ) ) ;
 	dialog.set_copyright(  "Copyright © 2004-2006 Bart Hakvoort"
-	                     "\nCopyright © 2008-2025 Curtis Gedak"
-	                     "\nCopyright © 2011-2025 Mike Fleetwood");
+	                     "\nCopyright © 2008-2026 Curtis Gedak"
+	                     "\nCopyright © 2011-2026 Mike Fleetwood");
 
 	//authors
 	//Names listed in alphabetical order by LAST name.
@@ -2080,7 +2080,7 @@ void Win_GParted::activate_resize()
 
 		// Apply resize/move from the dialog to a copy of the selected partition.
 		Partition * resized_ptn = selected_partition_ptr->clone();
-		resized_ptn->resize( dialog.Get_New_Partition() );
+		resized_ptn->resize(dialog.get_new_partition());
 
 		std::unique_ptr<Operation> operation = std::make_unique<OperationResizeMove>(
 		                        m_devices[m_current_device],
@@ -2256,7 +2256,7 @@ void Win_GParted::activate_paste()
 				std::unique_ptr<Operation> operation = std::make_unique<OperationCopy>(
 				                        m_devices[m_current_device],
 				                        *selected_partition_ptr,
-				                        dialog.Get_New_Partition(),
+				                        dialog.get_new_partition(),
 				                        *copied_partition);
 				operation->m_icon = Utils::mk_pixbuf(*this, Gtk::Stock::COPY, Gtk::ICON_SIZE_MENU);
 
@@ -2352,24 +2352,7 @@ void Win_GParted::activate_paste()
 			filesystem_ptn_new.clear_messages();
 		}
 
-		// Pasting an EFI System Partition (ESP) containing a FAT file system into
-		// an existing partition.  Copy across the ESP flag to maintain the
-		// on-disk partition type.
-		if ((copied_partition->fstype == FS_FAT16 || copied_partition->fstype == FS_FAT32) &&
-		    copied_partition->is_flag_set("esp")                                             )
-		{
-			partition_new->set_flag("esp");
-		}
-		// Pasting a non-FAT file system into an existing partition.  Always clear
-		// the ESP flag on the target partition.
-		if (copied_partition->fstype != FS_FAT16 && copied_partition->fstype != FS_FAT32)
-		{
-			partition_new->clear_flag("esp");
-		}
-		// Pasting a non-LVM2 PV file system into an existing partition.  (Always
-		// true as copying an LVM2 PV is not supported).  Always clear the LVM
-		// flag on the target partition.
-		partition_new->clear_flag("lvm");
+		GParted_Core::compose_partition_flags(*partition_new, m_devices[m_current_device].disktype);
  
 		std::unique_ptr<Operation> operation = std::make_unique<OperationCopy>(
 		                        m_devices[m_current_device],
@@ -2437,7 +2420,7 @@ void Win_GParted::activate_new()
 			std::unique_ptr<Operation> operation = std::make_unique<OperationCreate>(
 			                        m_devices[m_current_device],
 			                        *selected_partition_ptr,
-			                        dialog.Get_New_Partition());
+			                        dialog.get_new_partition());
 			operation->m_icon = Utils::mk_pixbuf(*this, Gtk::Stock::NEW, Gtk::ICON_SIZE_MENU);
 
 			add_operation(m_devices[m_current_device], std::move(operation));
@@ -2629,20 +2612,9 @@ void Win_GParted::activate_format( FSType new_fs )
 		// file system case apart from resize case.
 	}
 	temp_ptn->name = selected_partition_ptr->name;
-
-	// Formatting an EFI System Partition (ESP) to a FAT file system.  Copy across the
-	// ESP flag to maintain the on-disk partition type.  (It's not necessary to clear
-	// any flags when formatting to other file system types because the above
-	// temp_filesystem_ptn.Reset() clears all flags).
-	if ((new_fs == FS_FAT16 || new_fs == FS_FAT32) && selected_partition_ptr->is_flag_set("esp"))
-	{
-		temp_ptn->set_flag("esp");
-	}
-	// Formatting to LVM2 PV.  Always set the libparted LVM flag.
-	if (new_fs == FS_LVM2_PV)
-	{
-		temp_ptn->set_flag("lvm");
-	}
+	// Copy flags to allow ESP to be maintained.
+	temp_ptn->set_flags(selected_partition_ptr->get_flags());
+	GParted_Core::compose_partition_flags(*temp_ptn, m_devices[m_current_device].disktype);
 
 	// Generate minimum and maximum partition size limits for the new file system.
 	FS_Limits fs_limits = gparted_core.get_filesystem_limits( new_fs, temp_ptn->get_filesystem_partition() );

@@ -73,17 +73,20 @@ static bool udevadm_found = false;
 
 static const Glib::ustring GPARTED_BUG( _("GParted Bug") );
 
+
 GParted_Core::GParted_Core()
 {
 	thread_status_message = "" ;
 
 	ped_exception_set_handler( ped_exception_handler ) ; 
 
-	//get valid flags ...
+	// Get all libparted flags
 	for ( PedPartitionFlag flag = ped_partition_flag_next( static_cast<PedPartitionFlag>( 0 ) ) ;
 	      flag ;
 	      flag = ped_partition_flag_next( flag ) )
-		flags .push_back( flag ) ;
+	{
+		m_all_libparted_flags.push_back(flag);
+	}
 
 	find_supported_core();
 
@@ -589,12 +592,14 @@ std::map<Glib::ustring, bool> GParted_Core::get_available_flags( const Partition
 		PedPartition* lp_partition = get_lp_partition( lp_disk, partition );
 		if ( lp_partition )
 		{
-			for ( unsigned int t = 0 ; t < flags .size() ; t++ )
-				if ( ped_partition_is_flag_available( lp_partition, flags[ t ] ) )
-					flag_info[ ped_partition_flag_get_name( flags[ t ] ) ] =
-						ped_partition_get_flag( lp_partition, flags[ t ] ) ;
+			for (unsigned int i = 0; i < m_all_libparted_flags.size(); i++)
+				if (ped_partition_is_flag_available(lp_partition, m_all_libparted_flags[i]))
+				{
+					flag_info[ped_partition_flag_get_name(m_all_libparted_flags[i])] =
+						ped_partition_get_flag(lp_partition, m_all_libparted_flags[i]);
+				}
 		}
-	
+
 		destroy_device_and_disk( lp_device, lp_disk ) ;
 	}
 
@@ -1423,6 +1428,43 @@ Glib::ustring GParted_Core::check_logical_esp_warning(PartitionType ptntype, boo
 }
 
 
+// Set and clear partition flags consistently according to the existing flags, partition
+// table and file system type.
+void GParted_Core::compose_partition_flags(Partition& partition, const Glib::ustring& disktype)
+{
+	// For this EFI System Partition (ESP) containing a FAT file system clear other
+	// possible flags.
+	if (partition.is_flag_set("esp")                                   &&
+	    (partition.fstype == FS_FAT16 || partition.fstype == FS_FAT32)   )
+	{
+		partition.set_only_flag("esp");
+		return;
+	}
+
+	// For this LVM2 PV file system only set the LVM flag.
+	if (partition.fstype == FS_LVM2_PV)
+	{
+		partition.set_only_flag("lvm");
+		return;
+	}
+
+	// On an MSDOS table for this Extended partition or FAT16/32 file system always
+	// set the LBA (Logical Block Addressing) flag to move into the 21 century and
+	// match how the Parted command and GNOME Disks create such partitions.
+	if (disktype == "msdos"                    &&
+	    (partition.type   == TYPE_EXTENDED ||
+	     partition.fstype == FS_FAT16      ||
+	     partition.fstype == FS_FAT32        )   )
+	{
+		partition.set_only_flag("lba");
+		return;
+	}
+
+	// Otherwise clear the flags.
+	partition.clear_all_flags();
+}
+
+
 void GParted_Core::set_mountpoints( Partition & partition )
 {
 	if (partition.fstype == FS_LVM2_PV)
@@ -1708,8 +1750,8 @@ void GParted_Core::LP_set_used_sectors( Partition & partition, PedDisk* lp_disk 
 
 	if ( lp_disk )
 	{
-		PedPartition* lp_partition = ped_disk_get_partition_by_sector( lp_disk, partition .get_sector() ) ;
-		
+		PedPartition* lp_partition = get_lp_partition(lp_disk, partition);
+
 		if ( lp_partition )
 		{
 			fs = ped_file_system_open( & lp_partition ->geom ); 	
@@ -1734,10 +1776,12 @@ void GParted_Core::LP_set_used_sectors( Partition & partition, PedDisk* lp_disk 
 
 void GParted_Core::set_flags( Partition & partition, PedPartition* lp_partition )
 {
-	for ( unsigned int t = 0 ; t < flags .size() ; t++ )
-		if ( ped_partition_is_flag_available( lp_partition, flags[ t ] ) &&
-		     ped_partition_get_flag( lp_partition, flags[ t ] ) )
-			partition .flags .push_back( ped_partition_flag_get_name( flags[ t ] ) ) ;
+	for (unsigned int i = 0; i < m_all_libparted_flags.size(); i++)
+		if (ped_partition_is_flag_available(lp_partition, m_all_libparted_flags[i]) &&
+		    ped_partition_get_flag(lp_partition, m_all_libparted_flags[i])            )
+		{
+			partition.set_flag(ped_partition_flag_get_name(m_all_libparted_flags[i]));
+		}
 
 	Glib::ustring warning = check_logical_esp_warning(partition.type, partition.is_flag_set("esp"));
 	if (warning.size() > 0)
@@ -1767,8 +1811,9 @@ bool GParted_Core::create( Partition & new_partition, OperationDetail & operatio
 			return false;
 	}
 
-	if (new_partition.type   == TYPE_EXTENDED  ||
-	    new_partition.fstype == FS_UNFORMATTED   )
+	if (new_partition.type == TYPE_EXTENDED)
+		return set_partition_type(new_partition, operationdetail);
+	else if (new_partition.fstype == FS_UNFORMATTED)
 		return true;
 	else if (new_partition.fstype == FS_CLEARED)
 		return erase_filesystem_signatures( new_partition, operationdetail );
@@ -1776,9 +1821,8 @@ bool GParted_Core::create( Partition & new_partition, OperationDetail & operatio
 		return    erase_filesystem_signatures( new_partition, operationdetail )
 		       && set_partition_type( new_partition, operationdetail )
 		       && create_filesystem( new_partition, operationdetail );
-
-	return false;
 }
+
 
 bool GParted_Core::create_partition( Partition & new_partition, OperationDetail & operationdetail, Sector min_size )
 {
@@ -2076,7 +2120,7 @@ bool GParted_Core::name_partition( const Partition & partition, OperationDetail 
 	PedDisk* lp_disk = nullptr;
 	if ( get_device_and_disk( partition.device_path, lp_device, lp_disk ) )
 	{
-		PedPartition *lp_partition = ped_disk_get_partition_by_sector( lp_disk, partition.get_sector() );
+		PedPartition* lp_partition = get_lp_partition(lp_disk, partition);
 		if ( lp_partition )
 		{
 			success =    ped_partition_set_name( lp_partition, partition.name.c_str() )
@@ -3385,7 +3429,7 @@ bool GParted_Core::set_partition_type( const Partition & partition, OperationDet
 		return false;
 	}
 
-	PedPartition* lp_partition = ped_disk_get_partition_by_sector(lp_disk, partition.get_sector());
+	PedPartition* lp_partition = get_lp_partition(lp_disk, partition);
 	if (! lp_partition)
 	{
 		child_od.set_success_and_capture_errors(false);
@@ -3393,11 +3437,18 @@ bool GParted_Core::set_partition_type( const Partition & partition, OperationDet
 	}
 
 	// Set the on-disk partition type appropriately.  Libparted uses the file system
-	// type, overridden by flags.
+	// type, overridden or modified by flags.
 	bool success = false;
-	if ((partition.fstype == FS_FAT16 || partition.fstype == FS_FAT32)   &&
-	    partition.is_flag_set("esp")                                     &&
-	    ped_partition_is_flag_available(lp_partition, PED_PARTITION_ESP)   )
+	if (partition.type == TYPE_EXTENDED                                  &&
+	    ped_partition_is_flag_available(lp_partition, PED_PARTITION_LBA)   )
+	{
+		// Set the LBA flag for this extended partition to match what the Parted
+		// command does.  Only available on MSDOS tables.
+		success = set_partition_flag(lp_partition, PED_PARTITION_LBA, child_od);
+	}
+	else if ((partition.fstype == FS_FAT16 || partition.fstype == FS_FAT32)   &&
+	         partition.is_flag_set("esp")                                     &&
+	         ped_partition_is_flag_available(lp_partition, PED_PARTITION_ESP)   )
 	{
 		// The UEFI specification only supports FAT file systems in EFI System
 		// Partitions (ESP)s.  Set the libparted ESP flag to set the on-disk
@@ -3416,6 +3467,12 @@ bool GParted_Core::set_partition_type( const Partition & partition, OperationDet
 		// Tell libparted the type of the file system so it can set an appropriate
 		// on-disk partition type.
 		success = set_partition_type_using_fstype(lp_partition, partition.fstype, child_od);
+
+		if (partition.is_flag_set("lba")                                     &&
+		    ped_partition_is_flag_available(lp_partition, PED_PARTITION_LBA)   )
+		{
+			success = success && set_partition_flag(lp_partition, PED_PARTITION_LBA, child_od);
+		}
 	}
 
 	success = success && commit(lp_disk);
@@ -3429,6 +3486,14 @@ bool GParted_Core::set_partition_type( const Partition & partition, OperationDet
 bool GParted_Core::set_partition_type_using_flag(PedPartition* lp_partition,
                                                  PedPartitionFlag lp_flag,
                                                  OperationDetail& operationdetail)
+{
+	return set_partition_flag(lp_partition, lp_flag, operationdetail);
+}
+
+
+bool GParted_Core::set_partition_flag(PedPartition* lp_partition,
+                                      PedPartitionFlag lp_flag,
+                                      OperationDetail& operationdetail)
 {
 	/* TO TRANSLATORS: looks like   new partition flag: lvm */
 	operationdetail.add_child(OperationDetail(Glib::ustring::compose(_("new partition flag: %1"),
@@ -3480,14 +3545,13 @@ bool GParted_Core::set_partition_type_using_fstype(PedPartition* lp_partition,
 	operationdetail.add_child(OperationDetail(Glib::ustring::compose(_("new partition type: %1"),
 	                                                                 lp_fs_type->name)));
 
-	// Clear these libparted flags so they don't override the on-disk partition type
+	// Clear all libparted flags so they don't override the on-disk partition type
 	// being set using the file system type.
-	static const PedPartitionFlag flags_to_clear[] = {PED_PARTITION_ESP, PED_PARTITION_LVM};
-	for (unsigned int i = 0 ; i < sizeof(flags_to_clear) / sizeof(flags_to_clear[i]); i++)
+	for (unsigned int i = 0; i < m_all_libparted_flags.size(); i++)
 	{
-		if (ped_partition_is_flag_available(lp_partition, flags_to_clear[i]))
+		if (ped_partition_is_flag_available(lp_partition, m_all_libparted_flags[i]))
 		{
-			if (! ped_partition_set_flag(lp_partition, flags_to_clear[i], 0))
+			if (! ped_partition_set_flag(lp_partition, m_all_libparted_flags[i], 0))
 			{
 				operationdetail.get_last_child().set_success_and_capture_errors(false);
 				return false;
@@ -3769,7 +3833,7 @@ bool GParted_Core::erase_filesystem_signatures( const Partition & partition, Ope
 		else if ( get_disk( lp_device, lp_disk ) )
 		{
 			// Partitioned device; copy partition geometry
-			lp_partition = ped_disk_get_partition_by_sector( lp_disk, partition.get_sector() );
+			lp_partition = get_lp_partition(lp_disk, partition);
 			if (lp_partition)
 				lp_geom = ped_geometry_duplicate(&lp_partition->geom);
 		}

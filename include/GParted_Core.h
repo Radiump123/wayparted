@@ -82,6 +82,7 @@ public:
 	                                Byte_Value sector_size,
 	                                bool inside_extended );
 	static Glib::ustring check_logical_esp_warning(PartitionType ptntype, bool esp_flag);
+	static void compose_partition_flags(Partition& partition, const Glib::ustring& disktype);
 
 private:
 	//detectionstuff..
@@ -207,13 +208,16 @@ private:
 	bool check_repair_maximize( const Partition & partition,
 	                            OperationDetail & operationdetail );
 
-	static bool set_partition_type(const Partition& partition, OperationDetail& operationdetail);
+	bool set_partition_type(const Partition& partition, OperationDetail& operationdetail);
 	static bool set_partition_type_using_flag(PedPartition* lp_partition,
 					          PedPartitionFlag lp_flag,
 					          OperationDetail& operationdetail);
-	static bool set_partition_type_using_fstype(PedPartition* lp_partition,
-					            FSType fstype,
-					            OperationDetail& operationdetail);
+	static bool set_partition_flag(PedPartition* lp_partition,
+	                               PedPartitionFlag lp_flag,
+	                               OperationDetail& operationdetail);
+	bool set_partition_type_using_fstype(PedPartition* lp_partition,
+	                                     FSType fstype,
+	                                     OperationDetail& operationdetail);
 
 	bool calibrate_partition( Partition & partition, OperationDetail & operationdetail ) ;
 	bool calculate_exact_geom( const Partition & partition_old,
@@ -238,7 +242,7 @@ private:
 
 	static PedExceptionOption ped_exception_handler( PedException * e ) ;
 
-	std::vector<PedPartitionFlag> flags;
+	std::vector<PedPartitionFlag> m_all_libparted_flags;
 	std::vector<Glib::ustring> device_paths ;
 	bool probe_devices ;
 	Glib::ustring thread_status_message;  //Used to pass data to show_pulsebar method
