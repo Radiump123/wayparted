@@ -24,8 +24,8 @@ appstream_DATA = $(APPSTREAM_FILES)
 $(APPSTREAM_FILES): $(APPSTREAM_IN_FILES)
 	$(AM_V_GEN)$(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
-polkit_action_in_in_FILES = org.gnome.gparted.policy.in.in
-polkit_action_in_FILES = org.gnome.gparted.policy.in
+polkit_action_in_in_FILES = org.gnome.wayparted.policy.in.in
+polkit_action_in_FILES = org.gnome.wayparted.policy.in
 polkit_action_FILES = $(polkit_action_in_FILES:.policy.in=.policy)
 
 $(polkit_action_FILES): $(polkit_action_in_FILES)
@@ -50,8 +50,8 @@ wayparted:  wayparted.in Makefile
 	$(do_subst) < $(srcdir)/wayparted.in > wayparted
 	chmod +x wayparted
 
-org.gnome.gparted.policy.in: org.gnome.gparted.policy.in.in Makefile
-	$(do_subst) < $(srcdir)/org.gnome.gparted.policy.in.in > org.gnome.gparted.policy.in
+org.gnome.wayparted.policy.in: org.gnome.wayparted.policy.in.in Makefile
+	$(do_subst) < $(srcdir)/org.gnome.wayparted.policy.in.in > org.gnome.wayparted.policy.in
 
 dist-hook:
 	@if test -d "$(srcdir)/.git"; \

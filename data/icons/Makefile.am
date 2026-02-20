@@ -11,6 +11,7 @@ public_icons = \
 	hicolor_apps_32x32_gparted.png \
 	hicolor_apps_48x48_gparted.png \
 	hicolor_apps_scalable_gparted.svg \
+	hicolor_apps_scalable_wayparted.svg \
 	$(NULL)
 
 private_icons = \
