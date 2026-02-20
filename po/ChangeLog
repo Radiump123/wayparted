@@ -14,7 +14,7 @@
 
 2009-04-02  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.4.4
+	* wayparted-0.4.4
 	  ===================================================
 
 2009-04-01  Milo Casagrande  <milo@ubuntu.com>
@@ -127,12 +127,12 @@
 
 2009-02-12  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.4.3
+	* wayparted-0.4.3
 	  ===================================================
 
 2009-02-05  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.4.2
+	* wayparted-0.4.2
 	  ===================================================
 
 2009-02-02  Jonh Wendell  <jwendell@gnome.org>
@@ -224,12 +224,12 @@
 
 2008-11-29  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.4.1
+	* wayparted-0.4.1
 	  ===================================================
 
 2008-11-28  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.4.0
+	* wayparted-0.4.0
 	  ===================================================
 
 2008-11-27  Gil Forcada  <gforcada@gnome.org>
@@ -356,7 +356,7 @@
 
 2008-09-12  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.3.9
+	* wayparted-0.3.9
 	  ===================================================
 
 2008-09-07  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
@@ -418,7 +418,7 @@
 
 2008-07-10  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.3.8
+	* wayparted-0.3.8
 	  ===================================================
 
 2008-07-09  Petr Kovar  <pknbe@volny.cz>
@@ -470,7 +470,7 @@
 	
 2008-04-29  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.3.7
+	* wayparted-0.3.7
 	  ===================================================
 
 2008-04-29  Marcel Telka  <marcel@telka.sk>
@@ -487,10 +487,10 @@
 
 2008-04-21  Curtis Gedak  <gedakc@gmail.com>
 
-	* POTFILES.skip: Created file and added gparted.desktop.in
+	* POTFILES.skip: Created file and added wayparted.desktop.in
 
-	* POTFILES.in: Renamed gparted.desktop.in to gparted.desktop.in.in
-	  - This is to permit parsing of installdir for gparted.desktop
+	* POTFILES.in: Renamed wayparted.desktop.in to wayparted.desktop.in.in
+	  - This is to permit parsing of installdir for wayparted.desktop
 
 2008-04-20  Vincent van Adrighem  <adrighem@gnome.org>
 
@@ -526,7 +526,7 @@
 
 2008-03-26  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.3.6
+	* wayparted-0.3.6
 	  ===================================================
 
 2008-03-25  Marcel Telka  <marcel@telka.sk>
@@ -557,7 +557,7 @@
 
 2008-01-30  Curtis Gedak  <gedakc@gmail.com>
 
-	* gparted-0.3.5
+	* wayparted-0.3.5
 	  ===================================================
 
 2008-01-29  Jonh Wendell  <jwendell@gnome.org>
@@ -631,7 +631,7 @@
 
 2007-02-26 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* gparted-0.3.4
+	* wayparted-0.3.4
 	  ===================================================
 
 2007-02-17  Stéphane Raimbault  <stephane.raimbault@gmail.com>
@@ -672,7 +672,7 @@
 	
 2006-12-06 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* gparted-0.3.3
+	* wayparted-0.3.3
 	  ===================================================
 
 2006-12-04  Francisco Javier F. Serrador  <serrador@openshine.com>
@@ -685,7 +685,7 @@
 
 2006-12-01 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* gparted-0.3.2
+	* wayparted-0.3.2
 	  ===================================================
 
 2006-11-28  Matic Zgur  <mr.zgur@gmail.com>
@@ -794,7 +794,7 @@
 
 2006-09-11 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.3.1
+	* bumped to wayparted-0.3.1
 	  ===================================================
 
 2006-09-10  Francisco Javier F. Serrador  <serrador@openshine.com>
@@ -819,7 +819,7 @@
 	
 2006-09-04 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.3
+	* bumped to wayparted-0.3
 	  ===================================================
 
 2006-09-02  Clytie Siddall <clytie@riverland.net.au>
@@ -967,7 +967,7 @@
 
 2006-05-13 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.2.5
+	* bumped to wayparted-0.2.5
 	  ===================================================
 
 2006-05-02  Pawan Chitrakar  <pchitrakar@gmail.com>
@@ -1021,7 +1021,7 @@
 
 2006-04-04 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.2.4
+	* bumped to wayparted-0.2.4
 	  ===================================================
 
 2006-04-01  Vincent van Adrighem  <adrighem@gnome.org>
@@ -1034,7 +1034,7 @@
 
 2006-03-28 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.2.3
+	* bumped to wayparted-0.2.3
 	  ===================================================
 
 2006-03-28  Raphael Higino  <raphaelh@cvs.gnome.org>
@@ -1103,7 +1103,7 @@
 
 2006-02-22 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.2.2
+	* bumped to wayparted-0.2.2
 	  ======================================================
 
 2006-02-21  Clytie Siddall <clytie@riverland.net.au>
@@ -1120,7 +1120,7 @@
 
 2006-02-16 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* bumped to gparted-0.2.1
+	* bumped to wayparted-0.2.1
 	  ======================================================
 
 2006-02-14  Vincent van Adrighem  <adrighem@gnome.org>
@@ -1175,7 +1175,7 @@
 
 2006-01-30 Bart Hakvoort <hakvoort@cvs.gnome.org>
 
-	* gparted-0.2
+	* wayparted-0.2
 	  ========================================================
 
 2006-01-28  Gabor Kelemen  <kelemeng@gnome.hu>
@@ -1352,7 +1352,7 @@
 	* POTFILES.in: removed src/Dialog_About.cc.
 
 2005-11-25 Bart Hakvoort <hakvoort@cvs.gnome.org>
-	* gparted-0.0.9
+	* wayparted-0.0.9
 
 2005-11-22  Gabor Kelemen  <kelemeng@gnome.hu>
 
@@ -1645,7 +1645,7 @@
 
 	* cs.po: Updated Czech translation.
 
-2004-11-17 Bart Hakvoort  <gparted@users.sf.net>
+2004-11-17 Bart Hakvoort  <wayparted@users.sf.net>
 
 	* POTFILES.in: added src/GParted_Core.cc
 
@@ -1770,7 +1770,7 @@
 
 	* pt.po: Added Portuguese translation.
 
-2004-09-29  Bart Hakvoort  <gparted@users.sf.net>
+2004-09-29  Bart Hakvoort  <wayparted@users.sf.net>
 
 	* POTFILES.in: added src/VBox_VisualDisk.cc
 
@@ -1782,7 +1782,7 @@
 
 	* en_CA.po: Updated Canadian English translation.
 
-2004-09-27  Bart Hakvoort  <gparted@users.sf.net>
+2004-09-27  Bart Hakvoort  <wayparted@users.sf.net>
 
 	* POTFILES.in: added ../src/Partition.cc
 

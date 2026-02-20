@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2015-02-26 21:34+0000\n"
 "PO-Revision-Date: 2015-03-01 23:10+0100\n"
 "Last-Translator: Samir Ribic <samir.ribic@etf.unsa.ba>\n"
@@ -15,14 +15,14 @@ msgstr ""
 "X-Generator: Poedit 1.7.4\n"
 "X-Launchpad-Export-Date: 2015-02-15 06:11+0000\n"
 
-#: ../gparted.appdata.xml.in.h:1
+#: ../wayparted.appdata.xml.in.h:1
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr ""
 "GParted je besplatan uređivač za grafičko upravljanje dijeljenjem diska."
 
-#: ../gparted.appdata.xml.in.h:2
+#: ../wayparted.appdata.xml.in.h:2
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -33,7 +33,7 @@ msgstr ""
 "povečate ili smanjite svoj C: uređaj, kreirate prostor za novi operativni "
 "sistem, ili pokušati vratiti izgubljene podatke sa particije."
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, nilfs2, ntfs, reiserfs, "
@@ -44,25 +44,25 @@ msgstr ""
 "reiserfs, reiser4, ufs, and xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:359
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:359
 #: ../src/Win_GParted.cc:77 ../src/Win_GParted.cc:1311
 #: ../src/Win_GParted.cc:1502
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Uređivač particija"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted uređivač particija"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Kreiranje, reorganiziranje i brisanje particija"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "particija;"
 
@@ -448,7 +448,7 @@ msgstr "VAŽNO"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "Ako želite podršku, moraćete dati sačuvane detalje!"
 
-#. TO TRANSLATORS: looks liki   Seje http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks liki   Seje http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:275
 msgid "See %1 for more information."
 msgstr "Za više informacija pogledajte %1."
@@ -709,7 +709,7 @@ msgstr "Greška:"
 
 #. TO TRANSLATORS: looks liki
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:235
 msgid "The file system is mounted on:"
 msgstr "Sistem datoteka je montiran na:"
@@ -767,12 +767,12 @@ msgstr "_Priključi"
 msgid "_Unmount"
 msgstr "_Demontiraj"
 
-#. TO TRANSLATORS: looks liki   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks liki   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:190
 msgid "Created directory %1"
 msgstr "Kreirani direktorij %1"
 
-#. TO TRANSLATORS: looks liki   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks liki   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:217
 msgid "Removed directory %1"
 msgstr "Uklonjeni direktorij %1"
@@ -1714,8 +1714,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentacija nije dostupna"
 
 #: ../src/Win_GParted.cc:1485
-msgid "This build of gparted is configured without documentation."
-msgstr "Ovo izdanje gparteda je konfigurisano bez dokumentacije."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Ovo izdanje wayparteda je konfigurisano bez dokumentacije."
 
 #: ../src/Win_GParted.cc:1487
 msgid "Documentation is available at the project web site."

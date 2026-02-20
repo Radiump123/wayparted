@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2007-01-02 04:45+0000\n"
 "PO-Revision-Date: 2007-03-25 23:43+0530\n"
 "Last-Translator: yangka <yanang_ka@hotmail.com>\n"
@@ -20,13 +20,13 @@ msgstr ""
 "X-Poedit-Country: Bhutan\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../gparted.desktop.in.h:1
+#: ../wayparted.desktop.in.h:1
 #: ../src/Win_GParted.cc:1135
 msgid "GNOME Partition Editor"
 msgstr "ཇི་ནོམ་བར་བཅད་ཞུན་དགཔ།"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.h:2
+#: ../wayparted.desktop.in.h:2
 #: ../src/Win_GParted.cc:66
 #: ../src/Win_GParted.cc:1011
 #: ../src/Win_GParted.cc:1132
@@ -1045,8 +1045,8 @@ msgid "Sorry, not yet implemented."
 msgstr "དགོངསམ་མ་ཁྲེལ་ ད་ཚུན་བསྟར་བཅོས་མ་འབད།"
 
 #: ../src/Win_GParted.cc:1119
-msgid "Please visit http://gparted.sf.net for more information and support."
-msgstr "བརྡ་དོན་ཁ་གསལ་དང་རྒྱབ་སྐྱོརགྱི་དོན་ལུ་ http://gparted.sf.net ནང་ལུ་ བལྟ་སྤྱོད་འབད་གནང་།"
+msgid "Please visit http://wayparted.sf.net for more information and support."
+msgstr "བརྡ་དོན་ཁ་གསལ་དང་རྒྱབ་སྐྱོརགྱི་དོན་ལུ་ http://wayparted.sf.net ནང་ལུ་ བལྟ་སྤྱོད་འབད་གནང་།"
 
 #. TO TRANSLATORS: your name(s) here please, if there are more translators put newlines (\n) between the names.
 #. It's a good idea to provide the url of your translationteam as well. Thanks!

@@ -1,6 +1,6 @@
-# translation of gparted to Kinyarwanda.
+# translation of wayparted to Kinyarwanda.
 # Copyright (C) 2005 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Steve Murphy <murf@e-tools.com>, 2005
 # Steve performed initial rough translation from compendium built from translations provided by the following translators:
 # Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
@@ -13,8 +13,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted HEAD\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2005-04-01 15:32-0700\n"
 "PO-Revision-Date: 2005-03-31 20:55-0700\n"
 "Last-Translator: Steve Murphy <murf@e-tools.com>\n"
@@ -25,11 +25,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.h:1 src/Dialog_About.cc:32 src/Win_GParted.cc:33
+#: wayparted.desktop.in.h:1 src/Dialog_About.cc:32 src/Win_GParted.cc:33
 msgid "GParted"
 msgstr ""
 
-#: gparted.desktop.in.h:2 src/Dialog_About.cc:33
+#: wayparted.desktop.in.h:2 src/Dialog_About.cc:33
 msgid "Gnome Partition Editor"
 msgstr ""
 
@@ -773,7 +773,7 @@ msgstr "OYA"
 
 #: src/Win_GParted.cc:827
 #, fuzzy
-msgid "Please visit http://gparted.sf.net for more information and support."
+msgid "Please visit http://wayparted.sf.net for more information and support."
 msgstr "HTTP Cyuzuye kugirango Birenzeho Ibisobanuro Na Gushigikira"
 
 #: src/Win_GParted.cc:868

@@ -1,14 +1,14 @@
-# translation of gparted.HEAD.gu.po to Gujarati
+# translation of wayparted.HEAD.gu.po to Gujarati
 # Copyright (C) 2004 The Gnome Foundation
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 #
 # David Lodge <dave@cirt.net>, 2004.
 # Krunali Patel <krunaliben.patel@gmail.com>, 2007.
 # Ankit Patel <ankit@redhat.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD.gu\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD.gu\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2008-09-04 04:27+0000\n"
 "PO-Revision-Date: 2008-09-04 18:44+0530\n"
 "Last-Translator: Ankit Patel <ankit@redhat.com>\n"
@@ -22,12 +22,12 @@ msgstr ""
 "X-Poedit-Country: INDIA\n"
 "Plural-Forms:  nplurals=2; plural=(n!=1);\n\n"
 
-#: ../gparted.desktop.in.in.h:1
+#: ../wayparted.desktop.in.in.h:1
 #, fuzzy
 msgid "Create, reorganize, and delete partitions"
 msgstr "પસંદિત પાર્ટીશન કાઢી નાંખો"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "GParted Partition Editor"
 msgstr "GParted પાર્ટીશન સંપાદક"
 
@@ -873,7 +873,7 @@ msgid "%1 TiB"
 msgstr "%1 TiB"
 
 #: ../src/Utils.cc:291
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 msgstr ""
 
 #: ../src/Utils.cc:300

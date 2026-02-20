@@ -29,5 +29,5 @@ done
 if test ! -e /dev/disk/by-id; then
 	mkdir -v -m 0755 -p /dev/disk/by-id/
 	dev=`awk '$1=="major" {next} NF==4 {print $4; exit}' /proc/partitions`
-	ln -v -s "/dev/$dev" "/dev/disk/by-id/gparted-$dev"
+	ln -v -s "/dev/$dev" "/dev/disk/by-id/wayparted-$dev"
 fi

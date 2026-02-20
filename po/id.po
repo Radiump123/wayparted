@@ -1,14 +1,14 @@
-# Indonesian translation of gparted
-# Copyright (C) 2010 THE gparted'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Indonesian translation of wayparted
+# Copyright (C) 2010 THE wayparted'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 #
 # Dirgita <dirgitadevina@yahoo.co.id>, 2010.
 # Andika Triwidada <andika@gmail.com>, 2010-2014, 2017, 2021, 2022, 2025.
 # Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017-2023.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2024-09-11 15:56+0000\n"
 "PO-Revision-Date: 2025-03-15 22:14+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
@@ -21,15 +21,15 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 
 # Nama aplikasi dipertahankan pada posisi terdepan agar tidak mengubah urutan di menu
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted Penyunting Partisi"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Membuat, mengorganisasi ulang, serta menghapus partisi"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -37,7 +37,7 @@ msgstr ""
 "GParted adalah penyunting partisi bebas untuk mengelola partisi disk Anda "
 "secara grafis."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -48,7 +48,7 @@ msgstr ""
 "atau memperkecil drive C: Anda, membuat ruang bagi sistem operasi baru, atau "
 "mencoba menyelamatkan data dari partisi yang hilang."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -58,29 +58,29 @@ msgstr ""
 "exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, "
 "minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, dan xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "Proyek GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Penyunting Partisi"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partisi;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Jalankan GParted sebagai root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Otentikasi diperlukan untuk menjalankan Penyunting Partisi GParted sebagai "
@@ -527,7 +527,7 @@ msgstr ""
 "Bila Anda perlu bantuan, Anda perlu menyediakan rincian yang tersimpan!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -806,12 +806,12 @@ msgstr "_Kaitkan"
 msgid "_Unmount"
 msgstr "_Lepas Kaitan"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Dibuat direktori %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Dihapus direktori %1"
@@ -1985,8 +1985,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentasi tidak tersedia"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
-msgstr "Versi gparted ini dikompilasi tanpa dukungan dokumentasi."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Versi wayparted ini dikompilasi tanpa dukungan dokumentasi."
 
 #: src/Win_GParted.cc:1867
 msgid "Documentation is available at the project web site."

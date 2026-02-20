@@ -4,8 +4,8 @@
 # GunChleoc <fios@foramnagaidhlig.net>, 2013, 2014, 2015, 2016.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2016-05-20 16:05+0000\n"
 "PO-Revision-Date: 2016-06-11 09:01+0100\n"
 "Last-Translator: GunChleoc <fios@foramnagaidhlig.net>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../gparted.appdata.xml.in.h:1
+#: ../wayparted.appdata.xml.in.h:1
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -27,7 +27,7 @@ msgstr ""
 "'S e deasaiche pàirteachaidh an-asgaidh a tha sa GParted gus "
 "pàirteachaidhean nan diosga agad a stiùireadh gu grafaigeach."
 
-#: ../gparted.appdata.xml.in.h:2
+#: ../wayparted.appdata.xml.in.h:2
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -39,7 +39,7 @@ msgstr ""
 "chruthachadh airson siostaman-obrachaidh ùra no feuchainn ri dàta aiseag o "
 "phàirteachaidhean caillte leis na gnìomhan seo."
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, nilfs2, ntfs, reiserfs, "
@@ -50,25 +50,25 @@ msgstr ""
 "nilfs2, ntfs, reiserfs, reiser4, ufs agus xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:371
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:371
 #: ../src/Win_GParted.cc:79 ../src/Win_GParted.cc:1423
 #: ../src/Win_GParted.cc:1618
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Deasaiche pàirteachaidh"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Deasaiche pàirteachaidh GParted"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Cruthaich no sguab pàirteachaidhean às no cuir rian ùr orra"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Partition;Pàirteachadh;Pàirtich;"
 
@@ -504,7 +504,7 @@ msgstr ""
 "Ma tha thu a' sireadh taic, feumaidh tu am mion-fhiosrachadh air a "
 "shàbhaladh a thoirt seachad!"
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:287
 msgid "See %1 for more information."
 msgstr "Seall air %1 airson barrachd fiosrachaidh."
@@ -775,7 +775,7 @@ msgstr "Mearachd:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:236
 msgid "The file system is mounted on:"
 msgstr "Tha an siostam-fhaidhlichean ga mhunntachadh air:"
@@ -835,12 +835,12 @@ msgstr "_Munntaich"
 msgid "_Unmount"
 msgstr "Dì-mh_unntaich"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:234
 msgid "Created directory %1"
 msgstr "Chaidh am pasgan %1 a chruthachadh"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:261
 msgid "Removed directory %1"
 msgstr "Chaidh am pasgan %1 a thoirt air falbh"
@@ -1832,8 +1832,8 @@ msgid "Documentation is not available"
 msgstr "Chan eil docamaideadh ri làimh"
 
 #: ../src/Win_GParted.cc:1601
-msgid "This build of gparted is configured without documentation."
-msgstr "Chaidh an togail seo de gparted a rèiteachadh gun docamaideadh."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Chaidh an togail seo de wayparted a rèiteachadh gun docamaideadh."
 
 #: ../src/Win_GParted.cc:1603
 msgid "Documentation is available at the project web site."
@@ -2414,9 +2414,9 @@ msgstr "fìor-atharrachadh a' mheud"
 #~ msgid "read %1"
 #~ msgstr "leugh %1"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 #~ msgstr ""
-#~ "# Faidhle sealach air a chruthachadh le gparted.  Faodaidh tu a sguabadh "
+#~ "# Faidhle sealach air a chruthachadh le wayparted.  Faodaidh tu a sguabadh "
 #~ "às.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"

@@ -1,24 +1,24 @@
 GPARTED
 =======
-Gparted is the GNOME Partition Editor for creating, reorganizing, and
+Wayparted is the GNOME Partition Editor for creating, reorganizing, and
 deleting disk partitions.
 
 A hard disk is usually subdivided into one or more partitions.  These
 partitions are normally not re-sizable (making one smaller and the
-adjacent one larger.)  Gparted makes it possible for you to take a
+adjacent one larger.)  Wayparted makes it possible for you to take a
 hard disk and change the partition organization, while preserving the
 partition contents.
 
-More specifically, Gparted enables you to create, destroy, resize,
+More specifically, Wayparted enables you to create, destroy, resize,
 move, check, label, and copy partitions, and the file systems
 contained within.  This is useful for creating space for new operating
 systems, reorganizing disk usage, and mirroring one partition with
 another (disk imaging).
 
-Gparted can also be used with storage devices other than hard disks,
+Wayparted can also be used with storage devices other than hard disks,
 such as USB flash drives, and memory cards.
 
-Visit https://gparted.org for more information.
+Visit https://wayparted.org for more information.
 
 
 LICENSING
@@ -58,20 +58,20 @@ a. Pre-built Binary
       RHEL
       ----
       su -
-      dnf install gparted
+      dnf install wayparted
 
       Debian or Ubuntu
       ----------------
-      sudo apt install gparted
+      sudo apt install wayparted
 
       Fedora
       ------
       su -
-      dnf install gparted
+      dnf install wayparted
 
       OpenSUSE
       --------
-      sudo zypper install gparted
+      sudo zypper install wayparted
 
 b. Building from Source
 
@@ -80,8 +80,8 @@ b. Building from Source
       ./configure
       make
       sudo make install
-      sudo install -m 644 org.gnome.gparted.policy \
-             /usr/share/polkit-1/actions/org.gnome.gparted.local.policy
+      sudo install -m 644 org.gnome.wayparted.policy \
+             /usr/share/polkit-1/actions/org.gnome.wayparted.local.policy
    This assumes all the dependencies are already installed, builds the
    default configuration and polkit is being used as the graphical su
    program.
@@ -105,7 +105,7 @@ b. Building from Source
    On Debian or Ubuntu, these dependencies may be obtained by running
    one of the following commands:
      Either;
-      sudo apt build-dep gparted
+      sudo apt build-dep wayparted
      Or;
       sudo apt install build-essential gnome-common yelp-tools \
                        libglib2.0-dev uuid-dev libparted-dev \
@@ -188,8 +188,8 @@ c. Installing polkit's Action File
    file from the distribution's package.  Install the polkit action file
    with a unique name including an extra ".local" in the name:
 
-      sudo install -m 644 org.gnome.gparted.policy \
-             /usr/share/polkit-1/actions/org.gnome.gparted.local.policy
+      sudo install -m 644 org.gnome.wayparted.policy \
+             /usr/share/polkit-1/actions/org.gnome.wayparted.local.policy
 
 d. Building using a Specific (lib)parted Version
 
@@ -210,13 +210,13 @@ d. Building using a Specific (lib)parted Version
         export LD_RUN_PATH=/usr/local/lib
         export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 
-   4) Build gparted using steps listed above in "Building from Source".
+   4) Build wayparted using steps listed above in "Building from Source".
 
       Note that when you run ./configure you should see the specific
       version of parted listed in the check for libparted >= 1.7.1.
 
       You will also see the libparted version listed when running
-      gparted from the command line.
+      wayparted from the command line.
 
 
 DIRECTORIES
@@ -306,21 +306,21 @@ system.  These commands include:
                      libparted doesn't, read UUIDs and volume labels
    udisks          - used to prevent automounting of file systems
    hal-lock        - used to prevent automounting of file systems
-   pkexec          - used to acquire root privileges in gparted shell
-                     script wrapper, but only if available when gparted
+   pkexec          - used to acquire root privileges in wayparted shell
+                     script wrapper, but only if available when wayparted
                      source is configured
    gksudo          - alternatively used to acquire root privileges in
-                     gparted shell script wrapper, second choice if
-                     available when gparted source is configured
+                     wayparted shell script wrapper, second choice if
+                     available when wayparted source is configured
    gksu            - alternatively used to acquire root privileges in
-                     gparted shell script wrapper, third choice if
-                     available when gparted source is configured
+                     wayparted shell script wrapper, third choice if
+                     available when wayparted source is configured
    kdesudo         - alternatively used to acquire root privileges in
-                     gparted shell script wrapper, fourth choice if
-                     available when gparted source is configured
+                     wayparted shell script wrapper, fourth choice if
+                     available when wayparted source is configured
    xdg-su          - alternatively used to acquire root privileges in
-                     gparted shell script wrapper, last choice if
-                     available when gparted source is configured
+                     wayparted shell script wrapper, last choice if
+                     available when wayparted source is configured
    udevadm         - used to wait for udev rule execution and querying
                      udev device properties
    yelp            - used to display help manual

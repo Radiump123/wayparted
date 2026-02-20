@@ -1,5 +1,5 @@
 # Translation of oc.po to Occitan
-# Occitan translation of gparted.
+# Occitan translation of wayparted.
 # Copyright (C) 2005-2007 The Free Software Foundation, Inc.
 # This file is distributed under the GNU General Public License Version 2.
 # Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008
@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: oc\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2026-01-26 17:02+0000\n"
 "PO-Revision-Date: 2026-01-30 20:52+0100\n"
 "Last-Translator: Quentin PAGÈS\n"
@@ -20,57 +20,57 @@ msgstr ""
 "X-Generator: Poedit 3.8\n"
 "X-Launchpad-Export-Date: 2016-04-19 17:04+0000\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "Editor de particions de GNOME"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "Crèa, reorganiza e suprimís de particions"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr ""
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
 "for new operating systems, or attempt data rescue from lost partitions."
 msgstr ""
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
 "nilfs2, ntfs, reiserfs, reiser4, udf, ufs, and xfs."
 msgstr ""
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr ""
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
 #: src/Win_GParted.cc:1895
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "Editor de particions de GNOME"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Particion ;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr ""
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 #, fuzzy
 #| msgid "Authentication is required to run the GParted Partition Editor"
 msgid "Authentication is required to run the GParted Partition Editor as root"
@@ -524,7 +524,7 @@ msgstr ""
 "Se volètz recebre d'ajuda, vos caldrà provesir los detalhs enregistrats !"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:315
 msgid "See %1 for more information."
@@ -791,7 +791,7 @@ msgstr "suprimir l'entrada %1"
 msgid "update %1 entry"
 msgstr "metre a jorn l'entrada %1"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:100 src/FileSystem.cc:181
 msgid "Created directory %1"
 msgstr ""
@@ -805,7 +805,7 @@ msgstr "_Montar"
 msgid "_Unmount"
 msgstr "_Desmontar"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:211
 msgid "Removed directory %1"
 msgstr ""
@@ -1999,7 +1999,7 @@ msgid "Documentation is not available"
 msgstr ""
 
 #: src/Win_GParted.cc:1877
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "Aquesta version de Gparted es configurada sens documentacion."
 
 #: src/Win_GParted.cc:1879

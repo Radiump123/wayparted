@@ -25,7 +25,7 @@ noinst_HEADERS =  \
 	common.h               \
 	insertion_operators.h
 
-gparted_core_OBJECTS =  \
+wayparted_core_OBJECTS =  \
 	$(top_builddir)/src/BCache_Info.$(OBJEXT)           \
 	$(top_builddir)/src/BlockSpecial.$(OBJEXT)          \
 	$(top_builddir)/src/CopyBlocks.$(OBJEXT)            \
@@ -82,7 +82,7 @@ test_EraseFileSystemSignatures_SOURCES =  \
 	common.cc                          \
 	insertion_operators.cc
 test_EraseFileSystemSignatures_LDADD =  \
-	$(gparted_core_OBJECTS)                    \
+	$(wayparted_core_OBJECTS)                    \
 	$(GTEST_LIBS)                              \
 	$(top_builddir)/lib/gtest/lib/libgtest.la
 
@@ -103,6 +103,6 @@ test_SupportedFileSystems_SOURCES =  \
 	common.cc                     \
 	insertion_operators.cc
 test_SupportedFileSystems_LDADD   =  \
-	$(gparted_core_OBJECTS)                    \
+	$(wayparted_core_OBJECTS)                    \
 	$(GTEST_LIBS)                              \
 	$(top_builddir)/lib/gtest/lib/libgtest.la

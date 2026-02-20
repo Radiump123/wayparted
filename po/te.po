@@ -1,13 +1,13 @@
-# Telugu translation for gparted.
+# Telugu translation for wayparted.
 # Copyright (C) 2011 Swecha localisation Team <localization@swecha.net>
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 #
 # Praveen Illa <mail2ipn@gmail.com>, 2011, 2012.
 # Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2012-03-19 16:59+0000\n"
 "PO-Revision-Date: 2012-04-02 17:39+0530\n"
 "Last-Translator: Sasi Bhushan Boddepalli <sasi@swecha.net>\n"
@@ -19,21 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
 #: ../src/Win_GParted.cc:74 ../src/Win_GParted.cc:1215
 #: ../src/Win_GParted.cc:1406
 msgid "GParted"
 msgstr "జిపార్టెడ్"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "విభజన కూర్పకము"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "జిపార్టెడ్ విభజన కూర్పకము"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "విభజనలను సృష్టించు, పునర్వ్యవస్థీకరించు, మరియు తొలగించు"
 
@@ -372,7 +372,7 @@ msgstr "ముఖ్యమైనది"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "మీకు సహకారం కావాలంటే, దాచబడిన వివరాలను మీరు సమకూర్చవలసి ఉంటుంది!"
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:285
 msgid "See %1 for more information."
 msgstr "మరింత సమాచారం కోసం %1 చూడండి."
@@ -616,7 +616,7 @@ msgstr "దోషం:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:235
 msgid "The file system is mounted on:"
 msgstr "ఫైల్ వ్యవస్థ దీనిపై అధిరోహించబడింది:"
@@ -673,12 +673,12 @@ msgstr "మౌంట్ (_M)"
 msgid "_Unmount"
 msgstr "అనధిరోహించు (_U)"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:124
 msgid "Created directory %1"
 msgstr ""
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:151
 msgid "Removed directory %1"
 msgstr ""
@@ -1375,16 +1375,16 @@ msgstr "%1 GiB"
 msgid "%1 TiB"
 msgstr "%1 TiB"
 
-#. TO TRANSLATORS:  # Temporary file created by gparted.  It may be deleted.
-#. * means that this file is only used while gparted is applying operations.
+#. TO TRANSLATORS:  # Temporary file created by wayparted.  It may be deleted.
+#. * means that this file is only used while wayparted is applying operations.
 #. * If for some reason this file exists at any other time, then the message is
 #. * meant to inform a user that the file can be deleted with no harmful effects.
 #. * This file is typically created, exists for less than a few seconds, and is
-#. * then deleted by gparted.  Under normal circumstances a user should never
+#. * then deleted by wayparted.  Under normal circumstances a user should never
 #. * see this file.
 #.
 #: ../src/Utils.cc:438
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 msgstr "# జిపార్టెడ్ ద్వారా తాత్కాలిక ఫైల్ సృష్టించబడింది.  అది తొలగించబడవచ్చు.\n"
 
 #. TO TRANSLATORS: looks like
@@ -1616,7 +1616,7 @@ msgid "Documentation is not available."
 msgstr "పత్రీకరణ అందుబాటులో లేదు."
 
 #: ../src/Win_GParted.cc:1386
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "ఈ జిపార్టెడ్ నిర్మాణం పత్రీకరణ లేకుండా స్వరూపించబడింది."
 
 #: ../src/Win_GParted.cc:1388

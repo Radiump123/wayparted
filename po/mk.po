@@ -1,7 +1,7 @@
-# translation of gparted.HEAD.mk.po to Macedonian
-# Macedonian translation for gparted
+# translation of wayparted.HEAD.mk.po to Macedonian
+# Macedonian translation for wayparted
 # Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 #
 # <>, 2005.
 #  <>, 2005.
@@ -9,8 +9,8 @@
 # Jovan Naumovski <jovan@lugola.net>, 2006, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD.mk\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD.mk\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2007-01-02 04:45+0000\n"
 "PO-Revision-Date: 2007-04-07 02:20+0200\n"
 "Last-Translator: Jovan Naumovski <jovan@lugola.net>\n"
@@ -21,12 +21,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: ../gparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
+#: ../wayparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
 msgid "GNOME Partition Editor"
 msgstr "Уредувач на партиции за Гном"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.h:2 ../src/Win_GParted.cc:66
+#: ../wayparted.desktop.in.h:2 ../src/Win_GParted.cc:66
 #: ../src/Win_GParted.cc:1011 ../src/Win_GParted.cc:1132
 msgid "GParted"
 msgstr "Гпартед"
@@ -1040,8 +1040,8 @@ msgid "Sorry, not yet implemented."
 msgstr "Извинете, сеуште не е имплементирано."
 
 #: ../src/Win_GParted.cc:1119
-msgid "Please visit http://gparted.sf.net for more information and support."
-msgstr "За информации и поддршка Ве молам посетете ја http://gparted.sf.net."
+msgid "Please visit http://wayparted.sf.net for more information and support."
+msgstr "За информации и поддршка Ве молам посетете ја http://wayparted.sf.net."
 
 #. TO TRANSLATORS: your name(s) here please, if there are more translators put newlines (\n) between the names.
 #. It's a good idea to provide the url of your translationteam as well. Thanks!

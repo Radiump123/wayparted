@@ -68,14 +68,14 @@ typedef std::unique_ptr<Glib::ustring, TempWorkingDirDeleter> UniqueTempWorkingD
 static UniqueTempWorkingDirPtr temp_working_dir = nullptr;
 
 
-// Create private temporary working directory named "$TMPDIR/gparted-XXXXXX" with
+// Create private temporary working directory named "$TMPDIR/wayparted-XXXXXX" with
 // permissions 0700 using mkdtemp(3).  Everything is logged to the operation detail.  On
 // success returns unique pointer to the created directory name or on error returns unique
 // pointer of the nullptr.
 UniqueTempWorkingDirPtr mk_temp_working_dir(OperationDetail& operationdetail)
 {
 	char dir_buf[4096+1];
-	snprintf(dir_buf, sizeof(dir_buf), "%s/gparted-XXXXXX", Glib::get_tmp_dir().c_str());
+	snprintf(dir_buf, sizeof(dir_buf), "%s/wayparted-XXXXXX", Glib::get_tmp_dir().c_str());
 
 	// Looks like "mkdir -v" command was run to the user
 	operationdetail.add_child(OperationDetail(
@@ -96,7 +96,7 @@ UniqueTempWorkingDirPtr mk_temp_working_dir(OperationDetail& operationdetail)
 	// Update command with actually created temporary working directory
 	child_od.set_description(Glib::ustring("mkdir -v ") + dir_name, FONT_BOLD_ITALIC);
 	child_od.add_child(OperationDetail(
-	                        /* TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp */
+	                        /* TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp */
 	                        Glib::ustring::compose(_("Created directory %1"), dir_name),
 	                        STATUS_NONE,
 	                        FONT_MONOSPACE));
@@ -137,7 +137,7 @@ const Glib::ustring & FileSystem::get_generic_text( CUSTOM_TEXT ttype, int index
 
 
 // Create uniquely named temporary mount point directory and add results to operation
-// detail.  Will be named "$TMPDIR/gparted-XXXXXX/mnt-N" or ".../mnt-INFIX-N".  Returns
+// detail.  Will be named "$TMPDIR/wayparted-XXXXXX/mnt-N" or ".../mnt-INFIX-N".  Returns
 // the name of the created directory or the empty string on error.
 Glib::ustring FileSystem::mk_temp_dir( const Glib::ustring & infix, OperationDetail & operationdetail )
 {
@@ -157,7 +157,7 @@ Glib::ustring FileSystem::mk_temp_dir( const Glib::ustring & infix, OperationDet
 	mnt_number++;
 	char dir_buf [4096+1];
 	snprintf(dir_buf, sizeof(dir_buf), "%s/mnt-%s%s%u",
-	                        temp_working_dir->c_str(),      // "$TMPDIR/gparted-XXXXXX"
+	                        temp_working_dir->c_str(),      // "$TMPDIR/wayparted-XXXXXX"
 	                        infix.c_str(),
 	                        (infix.size() > 0 ? "-" : ""),
 	                        mnt_number);
@@ -207,7 +207,7 @@ void FileSystem::rm_temp_dir(const Glib::ustring& dir_name, OperationDetail& ope
 	}
 
 	child_od.add_child(OperationDetail(
-				/* TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp */
+				/* TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp */
 				Glib::ustring::compose(_("Removed directory %1"), dir_name),
 	                        STATUS_NONE,
 	                        FONT_MONOSPACE));

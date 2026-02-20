@@ -1,6 +1,6 @@
-# translation of gparted.
-# Copyright (C) 2006-2025 THE gparted'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# translation of wayparted.
+# Copyright (C) 2006-2025 THE wayparted'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 # Kazutaka HARADA <kazutaka@dc4.so-net.ne.jp>, 2006.
 # Masayuki SANO <sano@acs.i.kyoto-u.ac.jp>, 2006.
 # Hideki Yamane (Debian-JP) <henrich@debian.or.jp>, 2008-2009.
@@ -12,8 +12,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-04-11 03:27+0000\n"
 "PO-Revision-Date: 2016-04-27 15:57+0900\n"
 "Last-Translator: Takayuki KUSANO <https://bsky.app/profile/tkusano.jp>\n"
@@ -25,15 +25,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2010-07-14 13:34+0000\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted パーティション編集ツール"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "パーティションを作成／再構成／削除します"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -41,7 +41,7 @@ msgstr ""
 "GParted はフリーのパーティションエディターで、グラフィカルな操作感で、お使い"
 "のディスクのパーティションを管理できます。"
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -52,7 +52,7 @@ msgstr ""
 "C: drive の拡大または縮小、あるいは新規のオペレーティングシステムのためのス"
 "ペースの作成、またあるいは消失したパーティションの復旧の試行です。"
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -62,29 +62,29 @@ msgstr ""
 "ext2、ext3、ext4、fat16、fat32、hfs、hfs+、linux-swap、lvm2 pv、minix、"
 "nilfs2、ntfs、reiserfs、reiser4、udf、ufs、そして xfs。"
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GPartedプロジェクト"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1652
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1652
 #: src/Win_GParted.cc:1881
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "パーティション・エディター"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "パーティション;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "GPartedをrootで実行"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "GPartedをrootで実行するには認証が必要です"
 
@@ -527,7 +527,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "もしこの現象のサポートが必要であれば、保存した詳細を提供してください！"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -803,12 +803,12 @@ msgstr "マウント(_M)"
 msgid "_Unmount"
 msgstr "アンマウント(_U)"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "ディレクトリ %1 を作成しました"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "ディレクトリ %1 を削除しました"
@@ -1973,8 +1973,8 @@ msgid "Documentation is not available"
 msgstr "ドキュメントが利用できません"
 
 #: src/Win_GParted.cc:1863
-msgid "This build of gparted is configured without documentation."
-msgstr "このgpartedはドキュメント無しでビルドされています。"
+msgid "This build of wayparted is configured without documentation."
+msgstr "このwaypartedはドキュメント無しでビルドされています。"
 
 #: src/Win_GParted.cc:1865
 msgid "Documentation is available at the project web site."
@@ -2640,8 +2640,8 @@ msgstr ""
 #~ msgid "perform read-only test"
 #~ msgstr "読み込みテストを実行する"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# gparted によって作成された一時ファイルです。消去されます。\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# wayparted によって作成された一時ファイルです。消去されます。\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr ""
@@ -2689,17 +2689,17 @@ msgstr ""
 #, fuzzy
 #~ msgid "read %1 sectors"
 #~ msgstr ""
-#~ "#-#-#-#-#  ja.po1 (gparted master)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  ja.po1 (wayparted master)  #-#-#-#-#\n"
 #~ "%1 セクタを読み込む\n"
-#~ "#-#-#-#-#  ja.po2 (gparted 0.3.4)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  ja.po2 (wayparted 0.3.4)  #-#-#-#-#\n"
 #~ "%1 セクタを読み込み済"
 
 #, fuzzy
 #~ msgid "copy %1 sectors"
 #~ msgstr ""
-#~ "#-#-#-#-#  ja.po1 (gparted master)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  ja.po1 (wayparted master)  #-#-#-#-#\n"
 #~ "%1 セクタをコピーする\n"
-#~ "#-#-#-#-#  ja.po2 (gparted 0.3.4)  #-#-#-#-#\n"
+#~ "#-#-#-#-#  ja.po2 (wayparted 0.3.4)  #-#-#-#-#\n"
 #~ "%1 セクタをコピー済"
 
 #~ msgid "%1 sectors read"

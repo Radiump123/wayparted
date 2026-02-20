@@ -8,7 +8,7 @@
 #
 msgid ""
 msgstr "Project-Id-Version: eu_to_be_translate\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2022-11-20 14:03+0000\n"
 "PO-Revision-Date: 2023-04-09 01:57+0200\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
@@ -20,57 +20,57 @@ msgstr "Project-Id-Version: eu_to_be_translate\n"
 "X-Generator: Poedit 2.2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted partizio-editorea"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Sortu, berrantolatu eta ezabatu partizioak"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "GParted partizioen editore libre bat da, zure diskoen partizioak grafikoki kudeatzeko."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
 "for new operating systems, or attempt data rescue from lost partitions."
 msgstr "GParted-ekin partizioak tamainaz aldatu, kopiatu, etiketatu eta lekuz alda ditzakezu daturik galdu gabe. Ekintza hauek C: euskarria hedatu eta uzkurtzea,  sistema eragile berriarentzako lekua sortzea, edo galdutako partizioen datuak berreskuratzen saiatzea baimentzen dizute."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
 "reiserfs, reiser4, udf, ufs, and xfs."
 msgstr "GParted aplikazioak hainbat fitxategi-sistemarekin lan egin dezake: btrfs, exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, eta xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted proiektua"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
 #: src/Win_GParted.cc:1888
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Partizio-editorea"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partizioa;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Exekutatu GParted 'root' gisa"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "GParted partizioen editorea 'root' pribilegiorekin exekutatzeko beharrezkoa da autentifikatzea"
 
@@ -514,7 +514,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Laguntza nahi baduzu, gordetako xehetasunak eman beharko dituzu!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -838,7 +838,7 @@ msgstr "Errorea:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Fitxategi-sistema hemen muntatu da:"
@@ -892,12 +892,12 @@ msgstr "_Muntatu"
 msgid "_Unmount"
 msgstr "_Desmuntatu"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Direktorioa sortuta: %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Direktorioa kenduta: %1"
@@ -2024,7 +2024,7 @@ msgid "Documentation is not available"
 msgstr "Dokumentazioa ez dago eskuragarri"
 
 #: src/Win_GParted.cc:1870
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "Gparted-en konpilazio hau dokumentaziorik gabe konfiguratuta dago."
 
 #: src/Win_GParted.cc:1872
@@ -2647,7 +2647,7 @@ msgstr "mkudffs 1.1 bertsioa baino zaharragoek ez dituzte etiketan ASCII ez dire
 #~ msgid "Clear Partition Label on %1"
 #~ msgstr "Garbitu partizio-etiketa: --> %1"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 #~ msgstr "# Aldi baterako fitxategia sortu du GParted-ek. Ezaba daiteke.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"

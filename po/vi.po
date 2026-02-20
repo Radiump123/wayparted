@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2021-07-13 16:19+0000\n"
 "PO-Revision-Date: 2021-07-14 08:30+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Ứng dụng hiệu chỉnh phân vùng GParted"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Tạo, tổ chức lại và xóa bỏ phân vùng"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -34,7 +34,7 @@ msgstr ""
 "GParted là một ứng dụng chỉnh sửa phân vùng miễn phí dùng để quản lý các "
 "phân vùng trên đĩa của bạn dùng môi trường đồ họa."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -45,7 +45,7 @@ msgstr ""
 "nhỏ ổ đĩa C: của bạn, tạo chỗ trống để cài hệ điều hành mới, hay cố cứu dữ "
 "liệu từ các phân vùng đã mất."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -56,24 +56,24 @@ msgstr ""
 "nilfs2, ntfs, reiserfs, reiser4, udf, ufs và xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
 #: ../src/Win_GParted.cc:1635 ../src/Win_GParted.cc:1863
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Ứng dụng sửa phân vùng"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Partition;Phân vùng;Phan vung;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Chạy GParted với tư cách siêu quản trị"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Cần xác thực để chạy bộ Sửa phân vùng đĩa GParted dưới tư cách siêu quản trị "
@@ -525,7 +525,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Nếu bạn muỗn hỗ trợ, bạn cần đưa ra các chi tiết đã lưu!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -856,7 +856,7 @@ msgstr "Lỗi:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Hệ thống tập tin được gắn vào:"
@@ -914,12 +914,12 @@ msgstr "_Gắn kết"
 msgid "_Unmount"
 msgstr "_Bỏ gắn kết"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Đã tạo thư mục %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Đã xóa bỏ thư mục %1"
@@ -2081,8 +2081,8 @@ msgid "Documentation is not available"
 msgstr "Không có tài liệu"
 
 #: ../src/Win_GParted.cc:1845
-msgid "This build of gparted is configured without documentation."
-msgstr "Lần biên dịch này của gparted được cấu hình không có tài liệu."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Lần biên dịch này của wayparted được cấu hình không có tài liệu."
 
 #: ../src/Win_GParted.cc:1847
 msgid "Documentation is available at the project web site."
@@ -2798,9 +2798,9 @@ msgstr ""
 #~ msgid "Sorry, not yet implemented."
 #~ msgstr "Tiếc là chưa thực hiện.."
 
-#~ msgid "Please visit http://gparted.sf.net for more information and support."
+#~ msgid "Please visit http://wayparted.sf.net for more information and support."
 #~ msgstr ""
-#~ "Xin hãy ghé thăm “http://gparted.sf.net” để tìm thông tin thêm và sự hỗ "
+#~ "Xin hãy ghé thăm “http://wayparted.sf.net” để tìm thông tin thêm và sự hỗ "
 #~ "trợ."
 
 #~ msgid "Are you sure you want to create a %1 disklabel on %2?"

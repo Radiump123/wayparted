@@ -1,4 +1,4 @@
-# translation of gparted.HEAD.ne.po to Nepali
+# translation of wayparted.HEAD.ne.po to Nepali
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
 #
@@ -9,8 +9,8 @@
 # Shyam Krishna Bal <balshyam24@yahoo.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD.ne\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD.ne\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2007-01-02 04:45+0000\n"
 "PO-Revision-Date: 2007-11-19 17:03+0545\n"
 "Last-Translator: Shyam Krishna Bal <balshyam24@yahoo.com>\n"
@@ -22,12 +22,12 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=n !=1\n"
 
-#: ../gparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
+#: ../wayparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
 msgid "GNOME Partition Editor"
 msgstr "जिनोम विभाजन सम्पादक"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.h:2 ../src/Win_GParted.cc:66
+#: ../wayparted.desktop.in.h:2 ../src/Win_GParted.cc:66
 #: ../src/Win_GParted.cc:1011 ../src/Win_GParted.cc:1132
 msgid "GParted"
 msgstr "जिपार्टेड"
@@ -1029,8 +1029,8 @@ msgid "Sorry, not yet implemented."
 msgstr "माफ गर्नुहोस्, अझ सम्म कार्यान्वयन गरिएको छैन ।"
 
 #: ../src/Win_GParted.cc:1119
-msgid "Please visit http://gparted.sf.net for more information and support."
-msgstr "अझ धेरै जानकारी र समर्थनको लागि कृपया http://gparted.sf.net हेर्नुहोस् ।"
+msgid "Please visit http://wayparted.sf.net for more information and support."
+msgstr "अझ धेरै जानकारी र समर्थनको लागि कृपया http://wayparted.sf.net हेर्नुहोस् ।"
 
 #. TO TRANSLATORS: your name(s) here please, if there are more translators put newlines (\n) between the names.
 #. It's a good idea to provide the url of your translationteam as well. Thanks!

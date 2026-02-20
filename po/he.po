@@ -1,11 +1,11 @@
-# translation of gparted.HEAD.he.po to Hebrew
+# translation of wayparted.HEAD.he.po to Hebrew
 # Gil Osher <dolfin@rpg.org.il>, 2004.
 # Yosef Or Boczko <yoseforb@gmail.com>, 2022-2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD.he\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD.he\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2024-09-11 15:56+0000\n"
 "PO-Revision-Date: 2024-11-07 21:16+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
@@ -18,20 +18,20 @@ msgstr ""
 "X-Launchpad-Export-Date: 2007-10-11 22:04+0000\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "עורך המחיצות GParted"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "יצירה, ארגון מחדש ומחיקה של מחיצות"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk partitions."
 msgstr "‫GParted הוא עורך מחיצות חופשי לניהול גרפי של מחיצות הכוננים שלך."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data loss. "
 "These actions enable you to grow or shrink your C: drive, create space for new "
@@ -41,7 +41,7 @@ msgstr ""
 "הפעולות האלו מאפשרות לך להגדיל ולהקטין את כונן C:‎ שלך, ליצור מקום למערכות הפעלה "
 "חדשות או לנסות לשחזר נתונים ממחיצות שאבדו."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, "
@@ -51,29 +51,29 @@ msgstr ""
 "ext3,‏ ext4,‏ fat16,‏ fat32,‏ hfs,‏ hfs+‎,‏ linux-swap,‏ lvm2 pv,‏ minix,‏ nilfs2,‏ ‏ntfs, "
 "reiserfs,‏ reiser4,‏ udf,‏ ufs ו־xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "מיזם GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "עורך המחיצות"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "מחיצה;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "יש להפעיל את GParted כמשתמש על (root)"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "נדרש אימות כדי להריץ את עורך המחיצות GParted בתור משתמש על (root)"
 
@@ -516,7 +516,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "על־מנת לקבל תמיכה, יש לספק את הפרטים השמורים!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -790,12 +790,12 @@ msgstr "_עיגון"
 msgid "_Unmount"
 msgstr "_ניתוק"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "נוצרה התיקייה %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "הוסרה התיקייה %1"
@@ -1910,7 +1910,7 @@ msgid "Documentation is not available"
 msgstr "התיעוד אינו זמין"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "הידור התכנית GParted הוגדר ללא התיעוד."
 
 #: src/Win_GParted.cc:1867
@@ -2609,8 +2609,8 @@ msgstr "ב־‫mkudffs בגרסה 1.1 אין תמיכה בתווים מחוץ ל
 #~ msgid "Clear Partition Label on %1"
 #~ msgstr "ניקוי תווית המחיצה של %1"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# קובץ זמני שנוצר ע\"י gparted. ניתן למוחקו.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# קובץ זמני שנוצר ע\"י wayparted. ניתן למוחקו.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "פעולת התווית נכשלה: אין אפשרות לכתוב אל הקובץ הזמני %1. \n"
@@ -2715,8 +2715,8 @@ msgstr "ב־‫mkudffs בגרסה 1.1 אין תמיכה בתווים מחוץ ל
 #~ msgid "Sorry, not yet implemented."
 #~ msgstr "סליחה, עדיין לא ייושם..."
 
-#~ msgid "Please visit http://gparted.sf.net for more information and support."
-#~ msgstr "אנא בקר ב http://gparted.sf.net בשביל מידע נוסף ותמיכה."
+#~ msgid "Please visit http://wayparted.sf.net for more information and support."
+#~ msgstr "אנא בקר ב http://wayparted.sf.net בשביל מידע נוסף ותמיכה."
 
 #, fuzzy
 #~ msgid "Are you sure you want to create a %1 disklabel on %2?"

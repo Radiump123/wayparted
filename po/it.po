@@ -1,6 +1,6 @@
-# Italian translation of gparted
+# Italian translation of wayparted
 # Copyright (C) 2004-2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2022 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Mauro Santandrea <mausan66@tiscali.it>, 2007.
 # Marco Giorgetti <midimarcus@gmail.com>, 2004.
 # Gruppo traduzione Italiano di Ubuntu <gruppo-traduzione@ubuntu-it.org>, 2008
@@ -8,8 +8,8 @@
 # Marco Ciampa <ciampix@libero.it>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2021-05-17 20:51+0000\n"
 "PO-Revision-Date: 2022-03-16 17:19+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
@@ -21,21 +21,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Poedit 3.0.1\n"
 
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Editor di partizioni GParted"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Crea, riorganizza ed elimina partizioni"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "GParted è un editor di partizioni grafico per gestire i propri dischi."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -47,7 +47,7 @@ msgstr ""
 "sistemi operativi o tentare il ripristino dei dati da partizioni danneggiate "
 "o perse."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -58,24 +58,24 @@ msgstr ""
 "minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, e xfs.."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
 #: ../src/Win_GParted.cc:1635 ../src/Win_GParted.cc:1863
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Editor di partizioni"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Partizione;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Esegui GParted come root"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "È richiesto autenticarsi per eseguire «Editor di partizioni GParted» come "
@@ -523,7 +523,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Se si necessita di supporto, fornire i dettagli salvati."
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -858,7 +858,7 @@ msgstr "Errore:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Il file system è montato su:"
@@ -916,12 +916,12 @@ msgstr "_Monta"
 msgid "_Unmount"
 msgstr "_Smonta"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Directory %1 creata"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Directory %1 rimossa"
@@ -2115,8 +2115,8 @@ msgid "Documentation is not available"
 msgstr "Documentazione non disponibile"
 
 #: ../src/Win_GParted.cc:1845
-msgid "This build of gparted is configured without documentation."
-msgstr "Questa versione di gparted è configurata senza documentazione."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Questa versione di wayparted è configurata senza documentazione."
 
 #: ../src/Win_GParted.cc:1847
 msgid "Documentation is available at the project web site."

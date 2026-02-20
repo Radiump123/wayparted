@@ -8,9 +8,9 @@ AM_CFLAGS = -Wall
 
 AM_CXXFLAGS = -Wall	
 
-libexec_PROGRAMS = gpartedbin
+libexec_PROGRAMS = waypartedbin
 
-gpartedbin_SOURCES = \
+waypartedbin_SOURCES = \
 	BCache_Info.cc			\
 	BlockSpecial.cc			\
 	CopyBlocks.cc			\
@@ -84,5 +84,5 @@ gpartedbin_SOURCES = \
 	udf.cc				\
 	xfs.cc
 
-gpartedbin_LDADD = $(GTHREAD_LIBS) $(GTKMM_LIBS)
+waypartedbin_LDADD = $(GTHREAD_LIBS) $(GTKMM_LIBS)
 

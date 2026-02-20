@@ -1,12 +1,12 @@
-# Malayalam translation for gparted.
-# Copyright (C) 2010 gparted's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Malayalam translation for wayparted.
+# Copyright (C) 2010 wayparted's COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 # Anish A <aneesh.nl@gmail.com>, 2010, 2012.
 # Anish Sheela <aneesh.nl@gmail.com>, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2013-10-19 20:23+0000\n"
 "PO-Revision-Date: 2013-10-21 22:20+0530\n"
 "Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
@@ -23,21 +23,21 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:360
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:360
 #: ../src/Win_GParted.cc:75 ../src/Win_GParted.cc:1272
 #: ../src/Win_GParted.cc:1463
 msgid "GParted"
 msgstr "ജീപാര്‍ട്ടട്"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "പാര്‍ട്ടീഷന്‍ സംശോധകന്‍"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "ജീപാര്‍ട്ടട് പാര്‍ട്ടീഷന്‍ സംശോധകന്‍"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "പാര്‍ട്ടിഷനുകള്‍ നിര്‍മ്മിക്കുകയും, അടുക്കിവയ്ക്കുകയും, കളയുകയും ചെയ്യുക"
 
@@ -413,7 +413,7 @@ msgstr "പ്രധാനം"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "താങ്കള്‍ക്ക് പിന്‍തുണ ആവശ്യമുണ്ടെങ്കില്‍ സംരക്ഷിച്ച വിശദാംശങ്ങള്‍ നല്‍കണം."
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:276
 msgid "See %1 for more information."
 msgstr "കൂടുതല്‍ വിവരങ്ങള്‍ക്കായി %1 കാണുക."
@@ -663,7 +663,7 @@ msgstr "പിഴവ്:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:236
 msgid "The file system is mounted on:"
 msgstr "ഫയല്‍ സിസ്റ്റം മൌണ്ട് ചെയ്തിരിക്കുന്നത്:"
@@ -721,12 +721,12 @@ msgstr "_മൌണ്ട്"
 msgid "_Unmount"
 msgstr "_അണ്‍മൌണ്ട്"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:191
 msgid "Created directory %1"
 msgstr "%1 ഡയറക്ട്ടറി നിര്‍മ്മിച്ചു"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:218
 msgid "Removed directory %1"
 msgstr "%1 ഡയറക്ട്ടറി നിക്കം ചെയ്തു"
@@ -1624,7 +1624,7 @@ msgid "Documentation is not available"
 msgstr "സഹായക്കുറിപ്പുകള്‍ ലഭ്യമല്ല."
 
 #: ../src/Win_GParted.cc:1443
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "ജിപാര്‍ട്ടടിന്റെ ഈ നിര്‍മ്മിതി സഹായക്കുറിപ്പുകള്‍ ഇല്ലാതെയാണ് സജ്ജികരിച്ചിരിക്കുന്നത്."
 
 #: ../src/Win_GParted.cc:1445
@@ -2107,7 +2107,7 @@ msgstr "വലിപ്പം യഥാര്‍ത്ഥമായി മാറ�
 #~ msgid "read %1 using a block size of %2"
 #~ msgstr "%2 ബ്ളോക്ക് വലിപ്പം ഉപയോഗിച്ച് %1 വായിച്ചു"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 #~ msgstr "# ജിപാര്‍ട്ടട് നിര്‍മ്മിച്ച താല്‍കാലിക ഫയല്‍. ഇത് വേണമെങ്കില്‍ കളയാം.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"

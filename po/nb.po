@@ -1,12 +1,12 @@
-# Norwegian bokmål translation of gparted.
+# Norwegian bokmål translation of wayparted.
 # Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Kjartan Maraas <kmaraas@gnome.org>, 2010-2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted 0.12\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted 0.12\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2019-09-20 07:54+0000\n"
 "PO-Revision-Date: 2019-10-28 18:07+0100\n"
 "Last-Translator: Kjell Cato Heskjestad <cato@heskjestad.xyz>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.2.4\n"
 
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted partisjonsredigering"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Lag, omorganiser og slett partisjoner"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -34,7 +34,7 @@ msgstr ""
 "GParted er et gratis grafisk verktøy for å redigere og administrere "
 "partisjoner."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -45,7 +45,7 @@ msgstr ""
 "krympe C: -stasjonen, lage plass til nye operativsystemer, eller forsøke "
 "dataredning fra tapte partisjoner."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, "
@@ -56,24 +56,24 @@ msgstr ""
 "reiser4, udf, ufs og xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:87
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:87
 #: ../src/Win_GParted.cc:1632 ../src/Win_GParted.cc:1857
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Partisjonsredigering"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Partisjon;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Kjør GParted som root"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "Autentisering kreves for å kjøre GParted partisjonsredigering som root"
 
@@ -521,7 +521,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Hvis du vil ha støtte, må du oppgi de lagrede detaljer!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -854,7 +854,7 @@ msgstr "Feil:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Filsystemet er montert på:"
@@ -912,12 +912,12 @@ msgstr "_Monter"
 msgid "_Unmount"
 msgstr "_Avmonter"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:230
 msgid "Created directory %1"
 msgstr "Laget mappen %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:256
 msgid "Removed directory %1"
 msgstr "Fjernet mappen %1"
@@ -2086,8 +2086,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentasjon er ikke tilgjengelig"
 
 #: ../src/Win_GParted.cc:1839
-msgid "This build of gparted is configured without documentation."
-msgstr "Dette utgaven av gparted er konfigurert uten dokumentasjon."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Dette utgaven av wayparted er konfigurert uten dokumentasjon."
 
 #: ../src/Win_GParted.cc:1841
 msgid "Documentation is available at the project web site."

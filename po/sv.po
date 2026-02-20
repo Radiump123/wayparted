@@ -1,4 +1,4 @@
-# Swedish messages for gparted.
+# Swedish messages for wayparted.
 # Copyright © 2004-2025 Free Software Foundation, Inc.
 # Christian Rose <menthos@menthos.com>, 2004.
 # Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-10-17 15:38+0000\n"
 "PO-Revision-Date: 2025-10-22 19:19+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
@@ -22,15 +22,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.7\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted partitionsredigerare"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "Skapa, organisera om och ta bort partitioner"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -38,7 +38,7 @@ msgstr ""
 "GParted är en fri partitionsredigerare för att grafiskt hantera dina "
 "diskpartitioner."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -49,7 +49,7 @@ msgstr ""
 "din C:-disk, skapa utrymme för nya operativsystem, eller försöka att rädda "
 "data från förlorade partitioner."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -59,29 +59,29 @@ msgstr ""
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
 "reiserfs, reiser4, udf, ufs och xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted-projektet"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
 #: src/Win_GParted.cc:1895
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "Partitionsredigerare"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Partition;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Kör GParted som root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "Autentisering krävs för att köra GParted partitionsredigerare som root"
 
@@ -529,7 +529,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Om du vill ha support måste du tillhandahålla de sparade detaljerna!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:315
 msgid "See %1 for more information."
@@ -791,7 +791,7 @@ msgstr "ta bort %1-post"
 msgid "update %1 entry"
 msgstr "uppdatera %1-post"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:100 src/FileSystem.cc:181
 msgid "Created directory %1"
 msgstr "Skapade katalogen %1"
@@ -805,7 +805,7 @@ msgstr "_Montera"
 msgid "_Unmount"
 msgstr "_Avmontera"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:211
 msgid "Removed directory %1"
 msgstr "Tog bort katalogen %1"
@@ -1992,8 +1992,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentationen finns inte tillgänglig"
 
 #: src/Win_GParted.cc:1877
-msgid "This build of gparted is configured without documentation."
-msgstr "Detta bygge av gparted är konfigurerat utan dokumentation."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Detta bygge av wayparted är konfigurerat utan dokumentation."
 
 #: src/Win_GParted.cc:1879
 msgid "Documentation is available at the project web site."

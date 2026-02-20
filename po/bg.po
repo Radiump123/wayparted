@@ -1,15 +1,15 @@
-# Bulgarian translation of gparted po-file.
+# Bulgarian translation of wayparted po-file.
 # Copyright (C) 2005, 2009, 2010, 2011 Free Software Foundation, Inc.
 # Copyright (C) 2009 Krasimir Chonov <mk2616@abv.bg>.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Rostislav Raykov <zbrox@i-space.org>, 2005.
 # Alexander Shopov <ash@kambanaria.org>, 2009, 2010, 2011.
 # Krasimir Chonov <mk2616@abv.bg>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2012-07-10 21:14+0300\n"
 "PO-Revision-Date: 2012-07-10 21:13+0300\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
@@ -21,21 +21,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
 #: ../src/Win_GParted.cc:74 ../src/Win_GParted.cc:1218
 #: ../src/Win_GParted.cc:1409
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Редактор на дялове"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Редактор на дялове на дискове за GNOME"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Създаване, подреждане и изтриване на дялове"
 
@@ -373,7 +373,7 @@ msgstr "ВАЖНО"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "Ако искате поддръжка, трябва да предоставите запазените данни!"
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:285
 msgid "See %1 for more information."
 msgstr "За повече информация вижте %1."
@@ -617,7 +617,7 @@ msgstr "Грешка:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:236
 msgid "The file system is mounted on:"
 msgstr "Файловата система е монтирана на:"
@@ -675,12 +675,12 @@ msgstr "_Монтиране"
 msgid "_Unmount"
 msgstr "_Демонтиране"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:124
 msgid "Created directory %1"
 msgstr "Създадена е папка %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:151
 msgid "Removed directory %1"
 msgstr "Изтрита е папка %1"
@@ -1407,17 +1407,17 @@ msgstr "%1 GiB"
 msgid "%1 TiB"
 msgstr "%1 TiB"
 
-#. TO TRANSLATORS:  # Temporary file created by gparted.  It may be deleted.
-#. * means that this file is only used while gparted is applying operations.
+#. TO TRANSLATORS:  # Temporary file created by wayparted.  It may be deleted.
+#. * means that this file is only used while wayparted is applying operations.
 #. * If for some reason this file exists at any other time, then the message is
 #. * meant to inform a user that the file can be deleted with no harmful effects.
 #. * This file is typically created, exists for less than a few seconds, and is
-#. * then deleted by gparted.  Under normal circumstances a user should never
+#. * then deleted by wayparted.  Under normal circumstances a user should never
 #. * see this file.
 #.
 #: ../src/Utils.cc:438
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
-msgstr "# Временен файл създаден с gparted. Може да бъде изтрит.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+msgstr "# Временен файл създаден с wayparted. Може да бъде изтрит.\n"
 
 #. TO TRANSLATORS: looks like
 #. * Label operation failed:  Unable to write to temporary file /tmp/Y56ZZ3M13LM.
@@ -1651,7 +1651,7 @@ msgid "Documentation is not available."
 msgstr "Документацията липсва."
 
 #: ../src/Win_GParted.cc:1389
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "Това издание на Редактора на дялове е създадено без документация."
 
 #: ../src/Win_GParted.cc:1391

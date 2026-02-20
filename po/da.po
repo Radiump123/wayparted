@@ -1,6 +1,6 @@
 # Danish translation for GParted.
 # Copyright (C) 2013, 2018 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Per Kongstad <p_kongstad@op.pl>, 2009.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2009, 2010, 2011.
 # Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013.
@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GParted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2024-09-11 15:56+0000\n"
 "PO-Revision-Date: 2024-09-24 19:14+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
@@ -25,21 +25,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted - partitioneringsprogram"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Opret, omorganisér og slet partitioner"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "GParted er et frit grafisk partitionsprogram for dine diskpartitioner."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -50,7 +50,7 @@ msgstr ""
 "drev, oprette plads til nye operativsystemer eller forsøge at redde data fra "
 "mistede partitioner."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -60,29 +60,29 @@ msgstr ""
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
 "nilfs2, ntfs, reiserfs, reiser4, udf, ufs og xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted-projektet"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Partitioneringsprogram"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partition;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Kør GParted som root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Godkendelse er krævet for at køre partitioneringsprogrammet GParted som root"
@@ -529,7 +529,7 @@ msgstr ""
 "detaljer!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -809,12 +809,12 @@ msgstr "_Montér"
 msgid "_Unmount"
 msgstr "_Afmontér"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Oprettede mappe %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Fjernede mappe %1"
@@ -1996,8 +1996,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentation er ikke tilgængelig"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
-msgstr "Denne kompilering af gparted er konfigureret uden dokumentation."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Denne kompilering af wayparted er konfigureret uden dokumentation."
 
 #: src/Win_GParted.cc:1867
 msgid "Documentation is available at the project web site."

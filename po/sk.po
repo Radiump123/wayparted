@@ -1,13 +1,13 @@
-# Slovak translation for gparted.
+# Slovak translation for wayparted.
 # Copyright (C) 2008-2013 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Pavol Klačanský <pavol@klacansky.com>, 2008-2011.
 # Dušan Kazik <prescott66@gmail.com>, 2012-2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-08-13 19:05+0000\n"
 "PO-Revision-Date: 2025-08-14 12:27+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
 "X-Generator: Poedit 3.6\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted - editor diskových oddielov"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "Vytvára, reorganizuje a odstraňuje diskové oddiely"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -35,7 +35,7 @@ msgstr ""
 "GParted je bezplatný editor oddielov na grafické spravovanie oddielov na "
 "vašom disku."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -46,7 +46,7 @@ msgstr ""
 "vašu jednotku C:, vytvoriť miesto pre nové operačné systémy, alebo sa "
 "pokúsiť zachrániť údaje zo stratených oddielov."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -56,29 +56,29 @@ msgstr ""
 "btrfs, exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 "
 "pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs a xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "Projekt GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1664
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1664
 #: src/Win_GParted.cc:1893
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "Editor diskových oddielov"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Oddiel;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Spustiť GParted ako správca"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Na spustenie editora oddielov GParted ako správca sa vyžaduje overenie "
@@ -535,7 +535,7 @@ msgstr ""
 
 # * https://bugzilla.gnome.org/show_bug.cgi?id=631684
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:306
 msgid "See %1 for more information."
@@ -806,7 +806,7 @@ msgid "update %1 entry"
 msgstr "aktualizovať položku %1"
 
 # MČ: možno by som skôr použil: „Adresár %1 bol vytvorený“
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:99 src/FileSystem.cc:177
 msgid "Created directory %1"
 msgstr "Vytvorený adresár %1"
@@ -821,7 +821,7 @@ msgid "_Unmount"
 msgstr "_Odpojiť"
 
 # MČ: možno by som skôr použil: „Adresár %1 bol odstránený“
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:205
 msgid "Removed directory %1"
 msgstr "Odstránený adresár %1"
@@ -2005,8 +2005,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentácia nie je dostupná"
 
 #: src/Win_GParted.cc:1875
-msgid "This build of gparted is configured without documentation."
-msgstr "Táto zostava aplikácie gparted je nakonfigurovaná bez dokumentácie."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Táto zostava aplikácie wayparted je nakonfigurovaná bez dokumentácie."
 
 #: src/Win_GParted.cc:1877
 msgid "Documentation is available at the project web site."

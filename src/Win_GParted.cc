@@ -82,7 +82,7 @@ Win_GParted::Win_GParted( const std::vector<Glib::ustring> & user_devices )
 	copied_partition = nullptr;
 	selected_partition_ptr = nullptr;
 	new_count = 1;
-	gparted_core .set_user_devices( user_devices ) ;
+	wayparted_core .set_user_devices( user_devices ) ;
 
 	TOOLBAR_NEW =
 	TOOLBAR_DEL =
@@ -98,7 +98,7 @@ Win_GParted::Win_GParted( const std::vector<Glib::ustring> & user_devices )
 	
 	try
 	{
-		this ->set_default_icon_name( "gparted" ) ;
+		this ->set_default_icon_name( "wayparted" ) ;
 	}
 	catch ( Glib::Exception & e )
 	{
@@ -170,14 +170,14 @@ void Win_GParted::init_menubar()
 	Gtk::MenuItem *item;
 
 	//fill menubar_main and connect callbacks 
-	//gparted
+	//wayparted
 	menu = Gtk::manage(new Gtk::Menu());
 	image = Utils::mk_image(Gtk::Stock::REFRESH, Gtk::ICON_SIZE_MENU);
 	item = Gtk::manage(new GParted::Menu_Helpers::ImageMenuElem(
 		_("_Refresh Devices"),
 		Gtk::AccelKey("<control>r"),
 		*image, 
-		sigc::mem_fun(*this, &Win_GParted::menu_gparted_refresh_devices)));
+		sigc::mem_fun(*this, &Win_GParted::menu_wayparted_refresh_devices)));
 	menu->append(*item);
 
 	image = Utils::mk_image(Gtk::Stock::HARDDISK, Gtk::ICON_SIZE_MENU);
@@ -190,7 +190,7 @@ void Win_GParted::init_menubar()
 	menu->append(*item);
 
 	item = Gtk::manage(new GParted::Menu_Helpers::StockMenuElem(
-		Gtk::Stock::QUIT, sigc::mem_fun(*this, &Win_GParted::menu_gparted_quit)));
+		Gtk::Stock::QUIT, sigc::mem_fun(*this, &Win_GParted::menu_wayparted_quit)));
 	menu->append(*item);
 
 	item = Gtk::manage(new GParted::Menu_Helpers::MenuElem(
@@ -248,7 +248,7 @@ void Win_GParted::init_menubar()
 	menu->append(*item);
 
 	item = Gtk::manage(new GParted::Menu_Helpers::MenuElem(
-		_("_File System Support"), sigc::mem_fun(*this, &Win_GParted::menu_gparted_features)));
+		_("_File System Support"), sigc::mem_fun(*this, &Win_GParted::menu_wayparted_features)));
 	menu->append(*item);
 	mainmenu_items[MENU_VIEW] = item;
 
@@ -534,7 +534,7 @@ void Win_GParted::init_partition_menu()
 //Create the Partition --> Format to --> (file system list) menu
 Gtk::Menu * Win_GParted::create_format_menu()
 {
-	const std::vector<FS> & fss = gparted_core .get_filesystems() ;
+	const std::vector<FS> & fss = wayparted_core .get_filesystems() ;
 	menu = Gtk::manage(new Gtk::Menu());
 
 	for ( unsigned int t = 0 ; t < fss .size() ; t++ )
@@ -785,7 +785,7 @@ void Win_GParted::refresh_combo_devices()
 bool Win_GParted::pulsebar_pulse()
 {
 	pulsebar.pulse();
-	Glib::ustring tmp_msg = gparted_core .get_thread_status_message() ;
+	Glib::ustring tmp_msg = wayparted_core .get_thread_status_message() ;
 	if ( tmp_msg != "" ) {
 		statusbar.pop();
 		statusbar.push( tmp_msg );
@@ -872,7 +872,7 @@ void Win_GParted::add_operation(const Device& device, std::unique_ptr<Operation>
 	    operation->m_type == OPERATION_RESIZE_MOVE   )
 	{
 		Glib::ustring error;
-		if (! gparted_core.valid_partition(device, operation->get_partition_new(), error))
+		if (! wayparted_core.valid_partition(device, operation->get_partition_new(), error))
 		{
 			Gtk::MessageDialog dialog(*this,
 			                _("Could not add this operation to the list"),
@@ -974,8 +974,8 @@ void Win_GParted::Refresh_Visual()
 	//     Lifetime:   Valid until the next call to Refresh_Visual()
 	//     Call chain:
 	//
-	//         Win_GParted::menu_gparted_refresh_devices()
-	//             gparted_core.set_devices( devices )
+	//         Win_GParted::menu_wayparted_refresh_devices()
+	//             wayparted_core.set_devices( devices )
 	//                 GParted_Core::set_devices_thread( devices )
 	//                     devices.clear()
 	//                     etc.
@@ -1198,7 +1198,7 @@ void Win_GParted::set_valid_operations()
 	allow_label_filesystem( false ); allow_change_uuid( false ); allow_info( false );
 
 	// Set default name for the open/close crypt menu item.
-	const FileSystem * luks_filesystem_object = gparted_core.get_filesystem_object( FS_LUKS );
+	const FileSystem * luks_filesystem_object = wayparted_core.get_filesystem_object( FS_LUKS );
 	g_assert(luks_filesystem_object != nullptr);  // Bug: LUKS FileSystem object not found
 	dynamic_cast<Gtk::Label *>(partitionmenu_items[MENU_TOGGLE_CRYPT_BUSY]->get_child())
 		->set_label( luks_filesystem_object->get_custom_text( CTEXT_ACTIVATE_FILESYSTEM ) );
@@ -1218,8 +1218,8 @@ void Win_GParted::set_valid_operations()
 	const Partition & selected_filesystem = selected_partition_ptr->get_filesystem_partition();
 
 	// Get file system and LUKS encryption capabilities
-	const FS& fs_cap = gparted_core.get_fs(selected_filesystem.fstype);
-	const FS & enc_cap = gparted_core.get_fs( FS_LUKS );
+	const FS& fs_cap = wayparted_core.get_fs(selected_filesystem.fstype);
+	const FS & enc_cap = wayparted_core.get_fs( FS_LUKS );
 
 	//if there's something, there's some info ;)
 	allow_info( true ) ;
@@ -1235,7 +1235,7 @@ void Win_GParted::set_valid_operations()
 	// Set appropriate name for the file system active/deactivate menu item.
 	if (selected_partition_ptr->fstype != FS_LUKS || selected_partition_ptr->busy)
 	{
-		const FileSystem *filesystem_object = gparted_core.get_filesystem_object(selected_filesystem.fstype);
+		const FileSystem *filesystem_object = wayparted_core.get_filesystem_object(selected_filesystem.fstype);
 		if ( filesystem_object )
 		{
 			dynamic_cast<Gtk::Label *>(partitionmenu_items[MENU_TOGGLE_FS_BUSY]->get_child())
@@ -1630,16 +1630,16 @@ void Win_GParted::on_show()
 // Callback used to load the disk device details for the first time
 gboolean Win_GParted::initial_device_refresh( gpointer data )
 {
-	Win_GParted *win_gparted = static_cast<Win_GParted *>( data );
-	win_gparted->menu_gparted_refresh_devices();
+	Win_GParted *win_wayparted = static_cast<Win_GParted *>( data );
+	win_wayparted->menu_wayparted_refresh_devices();
 	return false;  // one shot g_idle_add() callback
 }
 
 
-void Win_GParted::menu_gparted_refresh_devices()
+void Win_GParted::menu_wayparted_refresh_devices()
 {
 	show_pulsebar( _("Scanning all devices...") ) ;
-	gparted_core.set_devices(m_devices);
+	wayparted_core.set_devices(m_devices);
 	hide_pulsebar();
 
 	// Check if m_current_device is still available (think about hotpluggable stuff like USB devices)
@@ -1706,20 +1706,20 @@ void Win_GParted::menu_gparted_refresh_devices()
 	}
 }
 
-void Win_GParted::menu_gparted_features()
+void Win_GParted::menu_wayparted_features()
 {
 	DialogFeatures dialog ;
 	dialog .set_transient_for( *this ) ;
 
-	dialog.load_filesystems(gparted_core.get_filesystems());
+	dialog.load_filesystems(wayparted_core.get_filesystems());
 	while ( dialog .run() == Gtk::RESPONSE_OK )
 	{
 		// Button [Rescan For Supported Actions] pressed in the dialog.  Rescan
 		// for available core and file system specific commands and update the
 		// view accordingly in the dialog.
 		GParted_Core::find_supported_core();
-		gparted_core .find_supported_filesystems() ;
-		dialog.load_filesystems(gparted_core.get_filesystems());
+		wayparted_core .find_supported_filesystems() ;
+		dialog.load_filesystems(wayparted_core.get_filesystems());
 
 		//recreate format menu...
 		partitionmenu_items[MENU_FORMAT]->unset_submenu();
@@ -1731,7 +1731,7 @@ void Win_GParted::menu_gparted_features()
 	}
 }
 
-void Win_GParted::menu_gparted_quit()
+void Win_GParted::menu_wayparted_quit()
 {
 	if ( Quit_Check_Operations() )
 		this ->hide();
@@ -1807,7 +1807,7 @@ void Win_GParted::show_resize_readonly( const Glib::ustring & path )
 }
 
 
-void Win_GParted::show_help(const Glib::ustring & filename /* E.g., "gparted" */,
+void Win_GParted::show_help(const Glib::ustring & filename /* E.g., "wayparted" */,
                             const Glib::ustring & link_id  /* For context sensitive help */)
 {
 	// Build uri string
@@ -1840,7 +1840,7 @@ void Win_GParted::show_help(const Glib::ustring & filename /* E.g., "gparted" */
 #if HAVE_GTK_SHOW_URI_ON_WINDOW
 	// nullptr is provided for the gtk_show_uri_on_window() parent window
 	// so that failures to launch yelp are reported.
-	// https://gitlab.gnome.org/GNOME/gparted/-/merge_requests/82#note_1106114
+	// https://gitlab.gnome.org/GNOME/wayparted/-/merge_requests/82#note_1106114
 	gtk_show_uri_on_window(nullptr, uri.c_str(), gtk_get_current_event_time(), &error);
 #else
 	GdkScreen *gscreen = gdk_screen_get_default();
@@ -1865,7 +1865,7 @@ void Win_GParted::menu_help_contents()
 {
 #ifdef ENABLE_HELP_DOC
 	//GParted was built with help documentation
-	show_help("gparted", "");
+	show_help("wayparted", "");
 #else
 	//GParted was built *without* help documentation using --disable-doc
 	Gtk::MessageDialog dialog( *this,
@@ -1874,11 +1874,11 @@ void Win_GParted::menu_help_contents()
 			Gtk::MESSAGE_INFO,
 			Gtk::BUTTONS_OK,
 			true ) ;
-	Glib::ustring tmp_msg = _( "This build of gparted is configured without documentation." ) ;
+	Glib::ustring tmp_msg = _( "This build of wayparted is configured without documentation." ) ;
 	tmp_msg += "\n" ;
 	tmp_msg += _( "Documentation is available at the project web site." ) ;
 	tmp_msg += "\n" ;
-	tmp_msg += "https://gparted.org";
+	tmp_msg += "https://wayparted.org";
 	dialog .set_secondary_text( tmp_msg ) ;
 	dialog .set_title( _("GParted Manual") );
 	dialog .run() ;
@@ -1893,7 +1893,7 @@ void Win_GParted::menu_help_about()
 	dialog .set_transient_for( *this ) ;
 
 	dialog.set_program_name(_("GParted"));
-	dialog .set_logo_icon_name( "gparted" ) ;
+	dialog .set_logo_icon_name( "wayparted" ) ;
 	dialog .set_version( VERSION ) ;
 	dialog .set_comments( _( "GNOME Partition Editor" ) ) ;
 	dialog.set_copyright(  "Copyright © 2004-2006 Bart Hakvoort"
@@ -1913,7 +1913,7 @@ void Win_GParted::menu_help_about()
 	strings .push_back( "Curtis Gedak <gedakc@users.sf.net>" ) ;
 	strings .push_back( "Matthias Gehre <m.gehre@gmx.de>" ) ;
 	strings .push_back( "Rogier Goossens <goossens.rogier@gmail.com>" ) ;
-	strings .push_back( "Bart Hakvoort <gparted@users.sf.net>" ) ;
+	strings .push_back( "Bart Hakvoort <wayparted@users.sf.net>" ) ;
 	strings .push_back( "Seth Heeren <sgheeren@gmail.com>" ) ;
 	strings .push_back( "Joan Lledó <joanlluislledo@gmail.com>" ) ;
 	strings .push_back( "Pali Rohár <pali.rohar@gmail.com>" );
@@ -1936,7 +1936,7 @@ void Win_GParted::menu_help_about()
 
 
 	//the url is not clickable - should not invoke web browser as root
-	dialog.set_website_label( "https://gparted.org" );
+	dialog.set_website_label( "https://wayparted.org" );
 
 	dialog .run() ;
 }
@@ -2024,12 +2024,12 @@ void Win_GParted::activate_resize()
 
 	Partition * working_ptn;
 	const FSType fstype = selected_filesystem_ptn.fstype;
-	FS fs_cap = gparted_core.get_fs( fstype );
-	FS_Limits fs_limits = gparted_core.get_filesystem_limits( fstype, selected_filesystem_ptn );
+	FS fs_cap = wayparted_core.get_fs( fstype );
+	FS_Limits fs_limits = wayparted_core.get_filesystem_limits( fstype, selected_filesystem_ptn );
 
 	if (selected_partition_ptr->fstype == FS_LUKS && selected_partition_ptr->busy)
 	{
-		const FS & enc_cap = gparted_core.get_fs( FS_LUKS );
+		const FS & enc_cap = wayparted_core.get_fs( FS_LUKS );
 
 		// For an open LUKS mapping containing a file system being resized/moved
 		// create a plain Partition object with the equivalent usage for the
@@ -2112,7 +2112,7 @@ void Win_GParted::activate_resize()
 			tmp_msg += "\n";
 			tmp_msg += _("You can learn how to repair the boot configuration in the GParted FAQ.");
 			tmp_msg += "\n";
-			tmp_msg += "https://gparted.org/faq.php";
+			tmp_msg += "https://wayparted.org/faq.php";
 			tmp_msg += "\n\n";
 			tmp_msg += _("Moving a partition might take a very long time to apply.");
 			dialog.set_secondary_text( tmp_msg );
@@ -2229,7 +2229,7 @@ void Win_GParted::activate_paste()
 
 		if ( ! max_amount_prim_reached() )
 		{
-			FS_Limits fs_limits = gparted_core.get_filesystem_limits(
+			FS_Limits fs_limits = wayparted_core.get_filesystem_limits(
 			                                      copied_filesystem_ptn.fstype,
 			                                      copied_filesystem_ptn );
 
@@ -2241,7 +2241,7 @@ void Win_GParted::activate_paste()
 			part_temp->name.clear();
 
 			Dialog_Partition_Copy dialog(m_display_device,
-			                             gparted_core.get_fs(copied_filesystem_ptn.fstype),
+			                             wayparted_core.get_fs(copied_filesystem_ptn.fstype),
 			                             fs_limits,
 			                             *selected_partition_ptr,
 			                             *part_temp);
@@ -2409,7 +2409,7 @@ void Win_GParted::activate_new()
 		                            *selected_partition_ptr,
 		                            any_extended,
 		                            new_count,
-		                            gparted_core.get_filesystems());
+		                            wayparted_core.get_filesystems());
 		dialog .set_transient_for( *this );
 		
 		if ( dialog .run() == Gtk::RESPONSE_OK )
@@ -2617,7 +2617,7 @@ void Win_GParted::activate_format( FSType new_fs )
 	GParted_Core::compose_partition_flags(*temp_ptn, m_devices[m_current_device].disktype);
 
 	// Generate minimum and maximum partition size limits for the new file system.
-	FS_Limits fs_limits = gparted_core.get_filesystem_limits( new_fs, temp_ptn->get_filesystem_partition() );
+	FS_Limits fs_limits = wayparted_core.get_filesystem_limits( new_fs, temp_ptn->get_filesystem_partition() );
 	bool encrypted = false;
 	if (selected_partition_ptr->fstype == FS_LUKS && selected_partition_ptr->busy)
 	{
@@ -2823,7 +2823,7 @@ void Win_GParted::toggle_crypt_busy_state()
 	if ( ! success )
 		show_toggle_failure_dialog( failure_msg, error_msg );
 
-	menu_gparted_refresh_devices();
+	menu_wayparted_refresh_devices();
 }
 
 bool Win_GParted::unmount_partition( const Partition & partition, Glib::ustring & error )
@@ -3031,7 +3031,7 @@ void Win_GParted::toggle_fs_busy_state()
 	if ( ! success )
 		show_toggle_failure_dialog( failure_msg, error_msg );
 
-	menu_gparted_refresh_devices() ;
+	menu_wayparted_refresh_devices() ;
 }
 
 void Win_GParted::activate_mount_partition( unsigned int index ) 
@@ -3086,7 +3086,7 @@ void Win_GParted::activate_mount_partition( unsigned int index )
 		show_toggle_failure_dialog( failure_msg, error_msg );
 	}
 
-	menu_gparted_refresh_devices() ;
+	menu_wayparted_refresh_devices() ;
 }
 
 void Win_GParted::activate_disklabel()
@@ -3157,7 +3157,7 @@ void Win_GParted::activate_disklabel()
 
 	if ( dialog .run() == Gtk::RESPONSE_APPLY )
 	{
-		if (! gparted_core.set_disklabel(m_devices[m_current_device],dialog.Get_Disklabel()))
+		if (! wayparted_core.set_disklabel(m_devices[m_current_device],dialog.Get_Disklabel()))
 		{
 			Gtk::MessageDialog dialog( *this,
 						   _("Error while creating partition table"),
@@ -3170,7 +3170,7 @@ void Win_GParted::activate_disklabel()
 
 		dialog .hide() ;
 			
-		menu_gparted_refresh_devices() ;
+		menu_wayparted_refresh_devices() ;
 	}
 }
 
@@ -3184,12 +3184,12 @@ void Win_GParted::activate_manage_flags()
 	while ( Gtk::Main::events_pending() )
 		Gtk::Main::iteration() ;
 
-	DialogManageFlags dialog( *selected_partition_ptr, gparted_core.get_available_flags( *selected_partition_ptr ) );
+	DialogManageFlags dialog( *selected_partition_ptr, wayparted_core.get_available_flags( *selected_partition_ptr ) );
 	dialog .set_transient_for( *this ) ;
 	dialog .signal_get_flags .connect(
-		sigc::mem_fun( &gparted_core, &GParted_Core::get_available_flags ) ) ;
+		sigc::mem_fun( &wayparted_core, &GParted_Core::get_available_flags ) ) ;
 	dialog .signal_toggle_flag .connect(
-		sigc::mem_fun( &gparted_core, &GParted_Core::toggle_flag ) ) ;
+		sigc::mem_fun( &wayparted_core, &GParted_Core::toggle_flag ) ) ;
 
 	get_window() ->set_cursor() ;
 	
@@ -3197,7 +3197,7 @@ void Win_GParted::activate_manage_flags()
 	dialog .hide() ;
 
 	if (dialog.m_changed)
-		menu_gparted_refresh_devices() ;
+		menu_wayparted_refresh_devices() ;
 }
 
 
@@ -3299,7 +3299,7 @@ void Win_GParted::activate_change_uuid()
 	g_assert( valid_display_partition_ptr( selected_partition_ptr ) );  // Bug: Not pointing at a valid display partition object
 
 	const Partition & filesystem_ptn = selected_partition_ptr->get_filesystem_partition();
-	const FileSystem *filesystem_object = gparted_core.get_filesystem_object(filesystem_ptn.fstype);
+	const FileSystem *filesystem_object = wayparted_core.get_filesystem_object(filesystem_ptn.fstype);
 	if ( filesystem_object->get_custom_text( CTEXT_CHANGE_UUID_WARNING ) != "" )
 	{
 		int i ;
@@ -3461,7 +3461,7 @@ void Win_GParted::activate_apply()
 		Dialog_Progress dialog_progress(m_devices, m_operations);
 		dialog_progress .set_transient_for( *this ) ;
 		dialog_progress .signal_apply_operation .connect(
-			sigc::mem_fun(gparted_core, &GParted_Core::apply_operation_to_disk) ) ;
+			sigc::mem_fun(wayparted_core, &GParted_Core::apply_operation_to_disk) ) ;
  
 		int response ;
 		do
@@ -3481,7 +3481,7 @@ void Win_GParted::activate_apply()
 		new_count = 1 ;
 		
 		//reread devices and their layouts...
-		menu_gparted_refresh_devices() ;
+		menu_wayparted_refresh_devices() ;
 	}
 }
 

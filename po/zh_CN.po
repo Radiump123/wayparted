@@ -1,6 +1,6 @@
-# Chinese (China) translation of gparted
+# Chinese (China) translation of wayparted
 # Copyright (C) 2009-2019 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Funda Wang <fundawang@linux.net.cn>, 2004.
 # Wei Mingzhi <whistler@openoffice.org>, 2009.
 # du baodao <centerpoint@139.com>, 2010.
@@ -12,8 +12,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-09-29 19:49+0000\n"
 "PO-Revision-Date: 2025-09-30 08:09+0800\n"
 "Last-Translator: lumingzh <lumingzh@qq.com>\n"
@@ -26,21 +26,21 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-03-22 12:43+0000\n"
 "X-Generator: Gtranslator 49.0\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted 分区编辑器"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "创建、重新组织或删除分区"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "GParted 是一款免费的分区编辑器，通过图形化的界面管理您的磁盘分区。"
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -49,7 +49,7 @@ msgstr ""
 "通过 GParted 您可以无损地调整、复制、标记或移动分区。通过这些操作您可以增大减"
 "小 C: 盘、为新操作系统创建新的空间或者尝试从丢失的分区恢复数据。"
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -59,29 +59,29 @@ msgstr ""
 "fat16、fat32、hfs、hfs+、linux-swap、lvm2 pv、minix、nilfs2、ntfs、reiserfs、"
 "reiser4、udf、ufs 和 xfs。"
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted 项目"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
 #: src/Win_GParted.cc:1895
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "分区编辑器"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Partition;分区;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "以 root 身份运行 GParted"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "以 root 身份运行 GParted 分区编辑器需要授权"
 
@@ -528,7 +528,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "如欲获取支持，您需要提供保存的详细信息！"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:315
 msgid "See %1 for more information."
@@ -789,7 +789,7 @@ msgstr "删除 %1"
 msgid "update %1 entry"
 msgstr "更新 %1"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:100 src/FileSystem.cc:181
 msgid "Created directory %1"
 msgstr "已创建目录 %1"
@@ -803,7 +803,7 @@ msgstr "挂载(_M)"
 msgid "_Unmount"
 msgstr "卸载(_U)"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:211
 msgid "Removed directory %1"
 msgstr "已移除目录 %1"
@@ -1939,7 +1939,7 @@ msgid "Documentation is not available"
 msgstr "文档不可用"
 
 #: src/Win_GParted.cc:1877
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "这个编译版本没有文档。"
 
 #: src/Win_GParted.cc:1879

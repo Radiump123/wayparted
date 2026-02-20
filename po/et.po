@@ -1,6 +1,6 @@
-# Estonian translation for gparted
+# Estonian translation for wayparted
 # Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 #
 # *nix https://launchpad.net/~xinu7
 # Laur Mõtus https://launchpad.net/~vprints
@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2010-12-14 21:26+0000\n"
 "PO-Revision-Date: 2010-10-17 19:20+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz gmail com>\n"
@@ -262,7 +262,7 @@ msgstr "TÄHTIS"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "Kui vajad abi, pead abi küsides kaasa panema salvestatud üksikasjad!"
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 msgid "See %1 for more information."
 msgstr "Rohkem teavet: %1"
 
@@ -887,16 +887,16 @@ msgstr "%1 GiB"
 msgid "%1 TiB"
 msgstr "%1 TiB"
 
-#. TO TRANSLATORS:  # Temporary file created by gparted.  It may be deleted.
-#. * means that this file is only used while gparted is applying operations.
+#. TO TRANSLATORS:  # Temporary file created by wayparted.  It may be deleted.
+#. * means that this file is only used while wayparted is applying operations.
 #. * If for some reason this file exists at any other time, then the message is
 #. * meant to inform a user that the file can be deleted with no harmful effects.
 #. * This file is typically created, exists for less than a few seconds, and is
-#. * then deleted by gparted.  Under normal circumstances a user should never
+#. * then deleted by wayparted.  Under normal circumstances a user should never
 #. * see this file.
 #.
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
-msgstr "# Ajutine fail, mille tekitas gparted.  Selle võib kustutada.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+msgstr "# Ajutine fail, mille tekitas wayparted.  Selle võib kustutada.\n"
 
 #. TO TRANSLATORS: looks like
 #. * Label operation failed:  Unable to write to temporary file /tmp/Y56ZZ3M13LM.
@@ -1081,7 +1081,7 @@ msgstr ""
 msgid "Documentation is not available."
 msgstr ""
 
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr ""
 
 msgid "Documentation is available at the project web site."

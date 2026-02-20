@@ -1,12 +1,12 @@
-# Kazakh translation for gparted
+# Kazakh translation for wayparted
 # Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2009-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-12-14 14:23+0000\n"
 "PO-Revision-Date: 2026-01-11 23:05+0500\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.8\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted бөлімдерді басқарушысы"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "Бөлімдерді жасау, басқару және өшіру"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -34,7 +34,7 @@ msgstr ""
 "GParted - бұл диск бөлімдерін графикалық түрде басқаруға арналған тегін "
 "қолданба."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -46,7 +46,7 @@ msgstr ""
 "босата аласыз, немесе жоғалған бөлімдерден деректерді қалпына келтіру талабын "
 "жасай аласыз."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, ext2, "
 "ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -56,29 +56,29 @@ msgstr ""
 "btrfs, exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, "
 "minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs және xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted жобасы"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
 #: src/Win_GParted.cc:1895
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "Қатты диск бөлімдерін басқару"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Бөлім;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "GParted қолданбасын әкімші ретінде жөнелту"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "GParted бөлімдер түзеткішін әкімші ретінде жөнелту үшін аутентификация керек"
@@ -525,7 +525,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Егер сізге көмек керек болса, сақталған ақпаратты ұсыну керек!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #: src/Dialog_Progress.cc:315
 msgid "See %1 for more information."
 msgstr "Көбірек ақпарат үшін %1 қараңыз."
@@ -779,7 +779,7 @@ msgstr "%1 жазбаны өшіру"
 msgid "update %1 entry"
 msgstr "%1 жазбаны жаңарту"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:100 src/FileSystem.cc:181
 msgid "Created directory %1"
 msgstr "Бума жасалды: %1"
@@ -793,7 +793,7 @@ msgstr "Тірк_еу"
 msgid "_Unmount"
 msgstr "_Тіркеуден босату"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:211
 msgid "Removed directory %1"
 msgstr "Бума өшірілді: %1"
@@ -1959,8 +1959,8 @@ msgid "Documentation is not available"
 msgstr "Құжаттама қолжетерсіз"
 
 #: src/Win_GParted.cc:1877
-msgid "This build of gparted is configured without documentation."
-msgstr "Бұл gparted нұсқасы құжаттамасыз жиналған."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Бұл wayparted нұсқасы құжаттамасыз жиналған."
 
 #: src/Win_GParted.cc:1879
 msgid "Documentation is available at the project web site."
@@ -2736,8 +2736,8 @@ msgstr ""
 #~ msgid "read %1 using a block size of %2"
 #~ msgstr "%1 оқу, блок өлшемі %2"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# gparted жасаған уақытша файл. Өшіруге болады.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# wayparted жасаған уақытша файл. Өшіруге болады.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "Белгі әрекеті сәтсіз: %1 уақытша файлына жазу мүмкін емес.\n"

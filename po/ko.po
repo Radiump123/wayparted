@@ -1,13 +1,13 @@
-# Korean translation of gparted.
-# Copyright (C) 2007 THE gparted'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Korean translation of wayparted.
+# Copyright (C) 2007 THE wayparted'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 # Namhyung Kim <namhyung@gmail.com>, 2007.
 # Seong-ho Cho <shcho@gnome.org>, 2012-2022.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2022-11-20 14:03+0000\n"
 "PO-Revision-Date: 2022-12-29 12:47+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
@@ -20,15 +20,15 @@ msgstr ""
 "X-Generator: Poedit 2.3.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted 분할 영역 편집기"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "분할 영역을 만들고, 재배치하고, 삭제합니다"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -36,7 +36,7 @@ msgstr ""
 "GParted는 디스크 분할 영역을 그래픽 화면으로 관리하는 자유 분할 영역 편집기입"
 "니다."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -46,7 +46,7 @@ msgstr ""
 "붙이거나, 옮길 수 있습니다. C: 드라이브의 크기를 늘이거나 줄이고, 새 운영체제"
 "의 공간을 만들거나 분실한 분할 영역의 데이터 복구를 시도할 수 있습니다."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -56,29 +56,29 @@ msgstr ""
 "swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, xfs 등의 수"
 "많은 파일 시스템에서 동작합니다."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted 프로젝트"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
 #: src/Win_GParted.cc:1888
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "분할 영역 편집기"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partition;파티션;분할;영역;분할영역;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "루트 권한으로 GParted 실행"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "GParted 분할 영역 편집기를 루트 권한으로 실행하려면 인증이 필요합니다"
 
@@ -521,7 +521,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "지원을 받으려면, 저장한 상세 정보를 제공해야 합니다!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -850,7 +850,7 @@ msgstr "오류:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "파일 시스템을 마운트한 지점:"
@@ -907,12 +907,12 @@ msgstr "마운트(_M)"
 msgid "_Unmount"
 msgstr "마운트 해제(_U)"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "%1 디렉터리를 만들었습니다"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "%1 디렉터리를 제거했습니다"
@@ -2069,8 +2069,8 @@ msgid "Documentation is not available"
 msgstr "문서가 없습니다"
 
 #: src/Win_GParted.cc:1870
-msgid "This build of gparted is configured without documentation."
-msgstr "이 gparted 빌드는 문서를 제외하고 설정했습니다."
+msgid "This build of wayparted is configured without documentation."
+msgstr "이 wayparted 빌드는 문서를 제외하고 설정했습니다."
 
 #: src/Win_GParted.cc:1872
 msgid "Documentation is available at the project web site."

@@ -1,7 +1,7 @@
-# translation of gparted.HEAD.po to
+# translation of wayparted.HEAD.po to
 # Catalan translation of GParted.
 # Copyright © 2004, 2005, 2006 Free Software Foundation, Inc.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Jordi Mallach <jordi@sindominio.net>, 2004, 2005.
 # David Cassany <davidcassany@hotmail.com> 2006.
 # Gil Forcada <gilforcada@guifi.net> 2006.
@@ -9,8 +9,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2013-03-31 21:29+0200\n"
 "PO-Revision-Date: 2013-03-16 08:30+0100\n"
 "Last-Translator: Pau Iranzo <pau.iranzo@softcatala.org>\n"
@@ -22,21 +22,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:360
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:360
 #: ../src/Win_GParted.cc:75 ../src/Win_GParted.cc:1276
 #: ../src/Win_GParted.cc:1467
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Editor de particions"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Editor de particions GParted"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Creeu, reorganitzeu i suprimiu particions"
 
@@ -431,7 +431,7 @@ msgstr "IMPORTANT"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "Si voleu ajuda, heu de proporcionar els detalls guardats."
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:276
 msgid "See %1 for more information."
 msgstr "Vegeu %1 per a més informació."
@@ -689,7 +689,7 @@ msgstr "Error:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:236
 msgid "The file system is mounted on:"
 msgstr "El sistema de fitxers està muntat a:"
@@ -747,12 +747,12 @@ msgstr "_Munta"
 msgid "_Unmount"
 msgstr "_Desmunta"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:188
 msgid "Created directory %1"
 msgstr "S'ha creat el directori %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:215
 msgid "Removed directory %1"
 msgstr "S'ha eliminat el directori %1"
@@ -1695,7 +1695,7 @@ msgid "Documentation is not available"
 msgstr "La documentació no està disponible"
 
 #: ../src/Win_GParted.cc:1447
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "Este muntatge del GParted s'ha configurat sense documentació."
 
 #: ../src/Win_GParted.cc:1449

@@ -1,14 +1,14 @@
-# Norwegian Nynorsk translation of gparted.
+# Norwegian Nynorsk translation of wayparted.
 # Copyright (C) 2010 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 #
 # Yngve Spjeld Landro <l10n@landro.net>, 2012.
 # Åsmund Skjæveland <aasmunds@ulrik.uio.no>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted 0.13\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted 0.13\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2012-09-01 18:28+0000\n"
 "PO-Revision-Date: 2012-10-03 22:13+0200\n"
 "Last-Translator: Åsmund Skjæveland <aasmunds@ulrik.uio.no>\n"
@@ -21,21 +21,21 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.5\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:362
 #: ../src/Win_GParted.cc:76 ../src/Win_GParted.cc:1234
 #: ../src/Win_GParted.cc:1425
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Partisjonshandsaming"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted partisjonshandsaming"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Lag, omorganiser og slett partisjonar"
 
@@ -386,7 +386,7 @@ msgstr "VIKTIG"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "For å få brukarstøtte må du gje frå deg dei lagra detaljane."
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:285
 msgid "See %1 for more information."
 msgstr "%1 gjev fleire opplysningar."
@@ -629,7 +629,7 @@ msgstr "Feil:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:236
 msgid "The file system is mounted on:"
 msgstr "Filsystemet er montert på:"
@@ -690,12 +690,12 @@ msgstr "_Monter"
 msgid "_Unmount"
 msgstr "_Avmonter"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:124
 msgid "Created directory %1"
 msgstr "Laga katalogen %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:151
 msgid "Removed directory %1"
 msgstr "Fjerna katalogen %1"
@@ -1431,17 +1431,17 @@ msgstr "%1 GiB"
 msgid "%1 TiB"
 msgstr "%1 TiB"
 
-#. TO TRANSLATORS:  # Temporary file created by gparted.  It may be deleted.
-#. * means that this file is only used while gparted is applying operations.
+#. TO TRANSLATORS:  # Temporary file created by wayparted.  It may be deleted.
+#. * means that this file is only used while wayparted is applying operations.
 #. * If for some reason this file exists at any other time, then the message is
 #. * meant to inform a user that the file can be deleted with no harmful effects.
 #. * This file is typically created, exists for less than a few seconds, and is
-#. * then deleted by gparted.  Under normal circumstances a user should never
+#. * then deleted by wayparted.  Under normal circumstances a user should never
 #. * see this file.
 #.
 #: ../src/Utils.cc:438
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
-msgstr "# Mellombels fil som vart laga av gparted. Ho kan slettast.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+msgstr "# Mellombels fil som vart laga av wayparted. Ho kan slettast.\n"
 
 #. TO TRANSLATORS: looks like
 #. * Label operation failed:  Unable to write to temporary file /tmp/Y56ZZ3M13LM.
@@ -1678,9 +1678,9 @@ msgid "Documentation is not available"
 msgstr "Dokumentasjonen er ikkje tilgjengeleg"
 
 #: ../src/Win_GParted.cc:1405
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr ""
-"Denne utgåva av gparted er laga med ei innstilling som ikkje gjev "
+"Denne utgåva av wayparted er laga med ei innstilling som ikkje gjev "
 "dokumentasjon."
 
 #: ../src/Win_GParted.cc:1407

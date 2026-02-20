@@ -1,12 +1,12 @@
-# Friulian translation for gparted.
-# Copyright (C) 2018 gparted's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Friulian translation for wayparted.
+# Copyright (C) 2018 wayparted's COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 # Fabio Tomat <f.t.public@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2023-02-26 20:14+0000\n"
 "PO-Revision-Date: 2023-03-07 09:15+0100\n"
 "Last-Translator: Fabio T. <f.t.public@gmail.com>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "X-Editor: HaiPO 1.4 beta\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "Editôr di partizions GParted"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Cree, torne a organizâ e elimine lis partizions"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -35,7 +35,7 @@ msgstr ""
 "GParted al è un editôr di partizions gratuit pe gjestion grafiche des "
 "partizions dai discs."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -46,7 +46,7 @@ msgstr ""
 "C:, creâ spazi pai gnûfs sistemis operatîfs o cirî di recuperâ dâts di "
 "partizions pierdudis."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -56,29 +56,29 @@ msgstr ""
 "ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, "
 "ntfs, reiserfs, reiser4, udf, ufs e xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "Il Progjet GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:90 src/Win_GParted.cc:1659
 #: src/Win_GParted.cc:1888
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Editôr di partizions"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partizion;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Eseguìs GParted come root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "La autenticazion e je necessarie par eseguî come root l'editôr di partizions "
@@ -532,7 +532,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Se si desidere supuart, si à di furnî i detais salvâts!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -866,7 +866,7 @@ msgstr "Erôr:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Il file-system al è montât su:"
@@ -924,12 +924,12 @@ msgstr "_Monte"
 msgid "_Unmount"
 msgstr "_Dismonte"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Creade cartele %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Gjavade cartele %1"
@@ -2110,8 +2110,8 @@ msgid "Documentation is not available"
 msgstr "Documentazion no disponibile"
 
 #: src/Win_GParted.cc:1870
-msgid "This build of gparted is configured without documentation."
-msgstr "Cheste version di gparted e je configurade cence la documentazion."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Cheste version di wayparted e je configurade cence la documentazion."
 
 #: src/Win_GParted.cc:1872
 msgid "Documentation is available at the project web site."

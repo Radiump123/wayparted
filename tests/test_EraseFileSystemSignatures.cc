@@ -58,11 +58,11 @@ protected:
 	virtual void TearDown();
 
 	bool erase_filesystem_signatures(const Partition& partition, OperationDetail& operationdetail)
-		{ return m_gparted_core.erase_filesystem_signatures(partition, operationdetail); };
+		{ return m_wayparted_core.erase_filesystem_signatures(partition, operationdetail); };
 
 	static const char* s_image_name;
 
-	GParted_Core    m_gparted_core;
+	GParted_Core    m_wayparted_core;
 	Partition       m_partition;
 	OperationDetail m_operation_detail;
 };

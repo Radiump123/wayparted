@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: si\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2007-12-17 04:03+0000\n"
 "PO-Revision-Date: 2008-01-22 16:33+0530\n"
 "Last-Translator: Danishka Navin <danishka@gmail.com>\n"
@@ -19,14 +19,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.h:2 ../src/Win_GParted.cc:66
+#: ../wayparted.desktop.in.h:2 ../src/Win_GParted.cc:66
 #: ../src/Win_GParted.cc:1011 ../src/Win_GParted.cc:1132
-#: ../gparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
+#: ../wayparted.desktop.in.h:1 ../src/Win_GParted.cc:1135
 msgid "GNOME Partition Editor"
 msgstr "GNOME තැටි කොටස් කිරීම"
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.h:2 ../src/Win_GParted.cc:66
+#: ../wayparted.desktop.in.h:2 ../src/Win_GParted.cc:66
 #: ../src/Win_GParted.cc:1011 ../src/Win_GParted.cc:1132
 msgid "GParted"
 msgstr "GParted"
@@ -1022,7 +1022,7 @@ msgid "Sorry, not yet implemented."
 msgstr "සමාවන්න, මෙතෙක් ක්‍රියාත්මක කර නොමැත "
 
 #: ../src/Win_GParted.cc:1119
-msgid "Please visit http://gparted.sf.net for more information and support."
+msgid "Please visit http://wayparted.sf.net for more information and support."
 msgstr "කරුණාකර වැඩිදුර විස්තර සහ උදව් සදහා මෙම වෙබ් අඩවිය පිරික්සන්න ,හ්ට්ට්ප්://ග්පර්ටෙඩ්.ස්ෆ්.නෙට් "
 
 #. TO TRANSLATORS: your name(s) here please, if there are more translators put newlines (\n) between the names.

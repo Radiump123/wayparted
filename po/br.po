@@ -1,12 +1,12 @@
-# Breton translation for gparted
+# Breton translation for wayparted
 # Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Denis <denisarnuad@yahoo.fr>, 2009.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2009-02-25 04:19+0000\n"
 "PO-Revision-Date: 2009-05-27 06:17+0100\n"
 "Last-Translator: denis <denisarnuad@yahoo.fr>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "X-Launchpad-Export-Date: 2009-05-26 15:00+0000\n"
 "X-Generator: Launchpad (build Unknown)\n"
 
-#: ../gparted.desktop.in.in.h:1
+#: ../wayparted.desktop.in.in.h:1
 msgid "Create, reorganize, and delete partitions"
 msgstr "Krouiñ, adaozañ ha dilemel ar parzhadoù"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Embanner parzhad"
 
@@ -949,7 +949,7 @@ msgid "%1 TiB"
 msgstr ""
 
 #: ../src/Utils.cc:330
-msgid "# Temporary file created by gparted.  It may be deleted.\n"
+msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 msgstr ""
 
 #: ../src/Utils.cc:339

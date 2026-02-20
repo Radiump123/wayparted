@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GParted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-06-04 18:39+0000\n"
 "PO-Revision-Date: 2025-06-09 19:04+0700\n"
 "Last-Translator: Akom Chotiphantawanon <knight2000@gmail.com>\n"
@@ -21,19 +21,19 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 3.6\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "เครื่องมือแก้ไขพาร์ติชัน GParted"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "สร้าง ปรับโครงสร้าง และลบพาร์ติชัน"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid "GParted is a free partition editor for graphically managing your disk partitions."
 msgstr "GParted เป็นเครื่องมือแก้ไขพาร์ติชันเสรีสำหรับจัดการพาร์ติชันในดิสก์ของคุณในแบบกราฟิก"
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data loss. These actions enable you "
 "to grow or shrink your C: drive, create space for new operating systems, or attempt data rescue from lost "
@@ -43,7 +43,7 @@ msgstr ""
 "การกระทำเหล่านี้ทำให้คุณสามารถขยายหรือลดขนาดไดรว์ C: ของคุณได้, สามารถสร้างที่ว่างสำหรับระบบปฏิบัติการใหม่ได้, "
 "หรือพยายามกู้ข้อมูลจากพาร์ติชันที่สูญหาย"
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, ext2, ext3, ext4, fat16, fat32, "
 "hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, and xfs."
@@ -51,28 +51,28 @@ msgstr ""
 "GParted ทำงานร่วมกับระบบไฟล์มากมาย รวมถึง: bcachefs, btrfs, exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, "
 "linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs และ xfs"
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "โครงการ GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:91 src/Win_GParted.cc:1654 src/Win_GParted.cc:1883
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:91 src/Win_GParted.cc:1654 src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "เครื่องมือแก้ไขพาร์ติชัน"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "พาร์ติชัน;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "ใช้ GParted ในฐานะ root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr "จำเป็นต้องมีการตรวจสอบสิทธิ์เพื่อเรียกใช้ GParted Partition Editor ในฐานะ root"
 
@@ -508,7 +508,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "ถ้าคุณต้องการบริการสนับสนุน คุณจำเป็นต้องให้รายละเอียดที่บันทึกไว้นี้"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:304
 msgid "See %1 for more information."
@@ -778,12 +778,12 @@ msgstr "เ_มานท์"
 msgid "_Unmount"
 msgstr "เ_ลิกเมานท์"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:93
 msgid "Created directory %1"
 msgstr "สร้างไดเรกทอรี %1 แล้ว"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:119
 msgid "Removed directory %1"
 msgstr "ลบไดเรกทอรี %1 แล้ว"
@@ -1876,8 +1876,8 @@ msgid "Documentation is not available"
 msgstr "เอกสารประกอบไม่พร้อมใช้งาน"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
-msgstr "การสร้าง gparted นี้ได้รับการกำหนดค่าโดยไม่มีเอกสารประกอบ"
+msgid "This build of wayparted is configured without documentation."
+msgstr "การสร้าง wayparted นี้ได้รับการกำหนดค่าโดยไม่มีเอกสารประกอบ"
 
 #: src/Win_GParted.cc:1867
 msgid "Documentation is available at the project web site."
@@ -2531,8 +2531,8 @@ msgstr "mkudffs ก่อนเวอร์ชัน 1.1 ไม่รองร�
 #~ msgid "read %1 using a block size of %2"
 #~ msgstr "อ่าน %1 โดยใช้ขนาดบล็อค %2"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# แฟ้มชั่วคราวสร้างโดย gparted สามารถลบทิ้งได้\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# แฟ้มชั่วคราวสร้างโดย wayparted สามารถลบทิ้งได้\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "การกำหนดชื่อล้มเหลว: ไม่สามารถเขียนลงแฟ้มชั่วคราว %1 ได้\n"
@@ -2625,8 +2625,8 @@ msgstr "mkudffs ก่อนเวอร์ชัน 1.1 ไม่รองร�
 #~ msgid "Sorry, not yet implemented."
 #~ msgstr "ขออภัย ยังไม่ได้ทำ"
 
-#~ msgid "Please visit http://gparted.sf.net for more information and support."
-#~ msgstr "กรุณาอ่านข้อมูลเพิ่มเติมได้ที่ http://gparted.sf.net"
+#~ msgid "Please visit http://wayparted.sf.net for more information and support."
+#~ msgstr "กรุณาอ่านข้อมูลเพิ่มเติมได้ที่ http://wayparted.sf.net"
 
 #~ msgid "Are you sure you want to create a %1 disklabel on %2?"
 #~ msgstr "ยืนยันที่จะสร้างชื่อดิสก์ %1 ที่ %2 หรือไม่?"

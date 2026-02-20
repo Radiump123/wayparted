@@ -1,4 +1,4 @@
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # -------------------------------------------------
 #
 # Ongebruikt/Vrij.
@@ -67,8 +67,8 @@
 # Justin van Steijn <jvs@fsfe.org>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2022-05-31 20:57+0000\n"
 "PO-Revision-Date: 2022-06-03 11:17+0200\n"
 "Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
@@ -81,15 +81,15 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 
 # editor/bewerker
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted partitiebewerker"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Partities aanmaken, ordenen en verwijderen"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -97,7 +97,7 @@ msgstr ""
 "GParted is een vrije partitiebewerker voor het grafisch beheren van uw "
 "schijfpartities."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -109,7 +109,7 @@ msgstr ""
 "creëren voor andere besturingssystemen, of een poging te doen tot "
 "dataherstel van verloren partities."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -122,25 +122,25 @@ msgstr ""
 # Voor mensen met Gtranslator: In de kop van dit bestand staat een
 # woordenlijst. Gebruik een teksteditor zoals gedit om die te zien.
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:90
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:90
 #: ../src/Win_GParted.cc:1659 ../src/Win_GParted.cc:1888
 msgid "GParted"
 msgstr "GParted"
 
 # editor/bewerker
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Partitiebewerker"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Partition;Partitie;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "GParted uitvoeren als systeembeheerder (root)"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Authenticatie is vereist om GParted partitiebewerker uit te voeren als "
@@ -627,7 +627,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Indien u hulp nodig hebt, moet u de opgeslagen details aanleveren!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -987,7 +987,7 @@ msgstr "Fout:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Het bestandssysteem is aangekoppeld op:"
@@ -1047,12 +1047,12 @@ msgstr "Aank_oppelen"
 msgid "_Unmount"
 msgstr "Ontk_oppelen"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Map %1 aangemaakt"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Map %1 verwijderd"
@@ -2355,8 +2355,8 @@ msgid "Documentation is not available"
 msgstr "Er is geen documentatie beschikbaar"
 
 #: ../src/Win_GParted.cc:1870
-msgid "This build of gparted is configured without documentation."
-msgstr "Deze versie van gparted is geconfigureerd zonder documentatie."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Deze versie van wayparted is geconfigureerd zonder documentatie."
 
 #: ../src/Win_GParted.cc:1872
 msgid "Documentation is available at the project web site."
@@ -3127,9 +3127,9 @@ msgstr ""
 #~ msgid "read %1 using a block size of %2"
 #~ msgstr "%1 lezen in blokken van %2 sectoren"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 #~ msgstr ""
-#~ "# Tijdelijk bestand, aangemaakt door gparted.  Het mag verwijderd "
+#~ "# Tijdelijk bestand, aangemaakt door wayparted.  Het mag verwijderd "
 #~ "worden.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
@@ -3235,9 +3235,9 @@ msgstr ""
 #~ msgid "Sorry, not yet implemented."
 #~ msgstr "Sorry, nog niet geïmplementeerd."
 
-#~ msgid "Please visit http://gparted.sf.net for more information and support."
+#~ msgid "Please visit http://wayparted.sf.net for more information and support."
 #~ msgstr ""
-#~ "Bezoek http://gparted.sf.net/ voor meer informatie en ondersteuning."
+#~ "Bezoek http://wayparted.sf.net/ voor meer informatie en ondersteuning."
 
 #~ msgid "1 operation pending"
 #~ msgstr "1 bewerking in de wachtrij"

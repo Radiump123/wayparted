@@ -1,13 +1,13 @@
-# Persian translation for gparted.
+# Persian translation for wayparted.
 # Copyright (C) 2011 Iranian Free Software Users Group (IFSUG.org)translation team.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Arash Mousavi <mousavi.arash@gmail.com>, 2011-2012.
 # Danial Behzadi <dani.behzi@ubuntu.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2023-10-04 16:25+0000\n"
 "PO-Revision-Date: 2024-01-20 15:29+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
@@ -20,57 +20,57 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 3.4.2\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "ویرایشگر افراز GParted"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "ساخت، بازسازی و حذف پارتیشن‌ها"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "جی‌پارتد ویرایشگر افرازی آزاد برای مدیریت گرافیکی افرازهای دیسکتان است."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
 "for new operating systems, or attempt data rescue from lost partitions."
 msgstr ""
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, "
 "reiser4, udf, ufs, and xfs."
 msgstr ""
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "پروژهٔ GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "ویرایشگر افراز"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partition;افراز;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "اجرای GParted با ریشه"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 
@@ -517,7 +517,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "اگر پشتیبانی لازم دارید، لازم است که جزئیات ذخیره شده را فراهم کنید!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -791,12 +791,12 @@ msgstr "_سوار کردن"
 msgid "_Unmount"
 msgstr "_پیاده کردن"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "شاخه ساخته شده %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "شاخه حذف شده %1"
@@ -1059,7 +1059,7 @@ msgstr ""
 
 #: src/GParted_Core.cc:2365
 msgid "using libparted"
-msgstr "درحال استفاده از libgparted"
+msgstr "درحال استفاده از libwayparted"
 
 #. TO TRANSLATORS:
 #. * means that GParted has encountered a programming bug and tried
@@ -1961,7 +1961,7 @@ msgid "Documentation is not available"
 msgstr "مستندات موجود نیستند."
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "این ساخت از GParted بدون مستندات آن پیکربندی شده است."
 
 #: src/Win_GParted.cc:1867
@@ -2759,8 +2759,8 @@ msgstr ""
 #~ msgid "Clear Partition Label on %1"
 #~ msgstr "پاک کردن برچسب پارتیشن از روی %2"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# پرونده موقت ساخته شده توسط gparted.  این ممکن است حذف شود.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# پرونده موقت ساخته شده توسط wayparted.  این ممکن است حذف شود.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "عملیات برچسب شکست خورد:  نمی‌توان بر روی پرونده موقت %1 یادداشت کرد.\n"

@@ -1,8 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-gparted.appdata.xml.in
-gparted.desktop.in.in
-org.gnome.gparted.policy.in.in
+wayparted.appdata.xml.in
+wayparted.desktop.in.in
+org.gnome.wayparted.policy.in.in
 include/Utils.h
 src/BCache_Info.cc
 src/BlockSpecial.cc

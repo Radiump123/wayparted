@@ -1,7 +1,7 @@
-# Turkish translation of gparted.
+# Turkish translation of wayparted.
 # Copyright (C) 2006 Gnome Foundation
-# Copyright (C) 2007-2023 gparted's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Copyright (C) 2007-2023 wayparted's COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 #
 # Serkan Kenar <serkan@labristeknoloji.com>, 2006.
 # Şenol Korkmaz <mail@senolkorkmaz.info>, 2011.
@@ -13,8 +13,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted 0.1\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted 0.1\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-10-26 16:35+0000\n"
 "PO-Revision-Date: 2025-02-09 21:48+0300\n"
 "Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
@@ -27,15 +27,15 @@ msgstr ""
 "X-Generator: Poedit 3.5\n"
 "X-POOTLE-MTIME: 1434043811.000000\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted Disk Bölümü Düzenleyicisi"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:5
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:5
 msgid "Create, reorganize, and delete partitions"
 msgstr "Bölümler oluştur, yeniden düzenle ve sil"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -43,7 +43,7 @@ msgstr ""
 "GParted; disk bölümlerinizi görsel olarak yönetmenize olanak tanıyan, "
 "ücretsiz bir bölümleme düzenleyicisidir."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -55,7 +55,7 @@ msgstr ""
 "sistemleri için yer açmanıza ya da kayıp bölümlerden veri kurtarmayı "
 "denemenize olanak tanır."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -65,29 +65,29 @@ msgstr ""
 "bcachefs, btrfs, exfat, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-"
 "swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs, ve xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "GParted Projesi"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
+#: wayparted.desktop.in.in:2 src/Win_GParted.cc:96 src/Win_GParted.cc:1666
 #: src/Win_GParted.cc:1895
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:3
+#: wayparted.desktop.in.in:3
 msgid "Partition Editor"
 msgstr "Disk Bölümü Düzenleyicisi"
 
-#: gparted.desktop.in.in:11
+#: wayparted.desktop.in.in:11
 msgid "Partition;"
 msgstr "Bölüm;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "GPartedʼi kök olarak çalıştır"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "GParted Disk Bölümü Düzenleyicisiʼni kök olarak çalıştırmak için kimlik "
@@ -536,7 +536,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Destek almak için, kaydedilmiş ayrıntılı bilgiyi sağlamalısınız!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:315
 msgid "See %1 for more information."
@@ -798,7 +798,7 @@ msgstr "%1 girdisini sil"
 msgid "update %1 entry"
 msgstr "%1 girdisini güncelle"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:100 src/FileSystem.cc:181
 msgid "Created directory %1"
 msgstr "%1 dizini oluşturuldu"
@@ -812,7 +812,7 @@ msgstr "_Bağla"
 msgid "_Unmount"
 msgstr "_Ayır"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:211
 msgid "Removed directory %1"
 msgstr "%1 dizini kaldırıldı"
@@ -1993,8 +1993,8 @@ msgid "Documentation is not available"
 msgstr "Belgelendirme kullanılabilir değil"
 
 #: src/Win_GParted.cc:1877
-msgid "This build of gparted is configured without documentation."
-msgstr "Bu gparted, belgelendirme içermeyecek şekilde inşa edilmiş."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Bu wayparted, belgelendirme içermeyecek şekilde inşa edilmiş."
 
 #: src/Win_GParted.cc:1879
 msgid "Documentation is available at the project web site."
@@ -2658,5 +2658,5 @@ msgstr ""
 #~ "The disk scan by gpart did not find any recognizable file systems on this "
 #~ "disk."
 #~ msgstr ""
-#~ "Bu disk üzerinde, gparted tarafından yapılan disk taramasında tanınan "
+#~ "Bu disk üzerinde, wayparted tarafından yapılan disk taramasında tanınan "
 #~ "herhangi bir dosya sistemi bulunamadı."

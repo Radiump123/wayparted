@@ -1,4 +1,4 @@
-# translation of gparted.HEAD.po to
+# translation of wayparted.HEAD.po to
 # This file is distributed under the same license as the PACKAGE package.
 # Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER.
 # Kostas Papadimas <pkst@gnome.org>, 2005, 2009.
@@ -7,8 +7,8 @@
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2012, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.HEAD\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.HEAD\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2018-06-19 16:53+0000\n"
 "PO-Revision-Date: 2018-09-05 01:56+0300\n"
 "Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Poedit 2.1.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../gparted.appdata.xml.in.h:1
+#: ../wayparted.appdata.xml.in.h:1
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -29,7 +29,7 @@ msgstr ""
 "Το GParted είναι ένας δωρεάν επεξεργαστής κατάτμησης για την γραφική "
 "διαχείριση των κατατμήσεων στο δίσκο σας."
 
-#: ../gparted.appdata.xml.in.h:2
+#: ../wayparted.appdata.xml.in.h:2
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -41,7 +41,7 @@ msgstr ""
 "δημιουργηθεί χώρος για νέα λειτουργικά συστήματα, ή να γίνει προσπάθεια "
 "διάσωσης των δεδομένων από χαμένες κατατμήσεις."
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, nilfs2, ntfs, reiserfs, "
@@ -52,33 +52,33 @@ msgstr ""
 "nilfs2, ntfs, reiserfs, reiser4, udf, ufs και xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:376
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:376
 #: ../src/Win_GParted.cc:87 ../src/Win_GParted.cc:1514
 #: ../src/Win_GParted.cc:1704
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Επεξεργαστής κατατμήσεων"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Επεξεργαστής κατατμήσεων GParted"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Δημιουργία, επεξεργασία και διαγραφή κατατμήσεων"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Κατάτμηση;Partition;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Εκτέλεση GParted ως root"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 
@@ -524,7 +524,7 @@ msgstr ""
 "Για να λάβετε υποστήριξη πρέπει να παράσχετε τις αποθηκευμένες λεπτομέρειες!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:290
 msgid "See %1 for more information."
@@ -802,7 +802,7 @@ msgstr "Σφάλμα:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:232
 msgid "The file system is mounted on:"
 msgstr "Το σύστημα αρχείων προσαρτήθηκε στο:"
@@ -861,12 +861,12 @@ msgstr "_Προσάρτηση"
 msgid "_Unmount"
 msgstr "Α_ποπροσάρτηση"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:226
 msgid "Created directory %1"
 msgstr "Δημιουργήθηκε ο κατάλογος %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:252
 msgid "Removed directory %1"
 msgstr "Διαγράφηκε ο κατάλογος %1"
@@ -2029,8 +2029,8 @@ msgid "Documentation is not available"
 msgstr "Η τεκμηρίωση δεν είναι διαθέσιμη"
 
 #: ../src/Win_GParted.cc:1687
-msgid "This build of gparted is configured without documentation."
-msgstr "Αυτή η έκδοση του gparted δεν συνοδεύεται από τεκμηρίωση."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Αυτή η έκδοση του wayparted δεν συνοδεύεται από τεκμηρίωση."
 
 #: ../src/Win_GParted.cc:1689
 msgid "Documentation is available at the project web site."
@@ -2764,8 +2764,8 @@ msgstr ""
 #~ msgid "perform read-only test"
 #~ msgstr "εκτέλεση δοκιμής μόνο ανάγνωσης"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# Προσωρινό αρχείο του gparted. Μπορείτε να το διαγράψετε.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# Προσωρινό αρχείο του wayparted. Μπορείτε να το διαγράψετε.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr ""

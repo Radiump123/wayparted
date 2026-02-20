@@ -1,12 +1,12 @@
-# Belarusian translation for gparted.
-# Copyright (C) 2018 gparted's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gparted package.
+# Belarusian translation for wayparted.
+# Copyright (C) 2018 wayparted's COPYRIGHT HOLDER
+# This file is distributed under the same license as the wayparted package.
 # Antikruk <zmicerturok@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2025-05-15 15:38+0000\n"
 "PO-Revision-Date: 2025-05-28 19:12+0300\n"
 "Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
@@ -19,21 +19,21 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.5\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "Рэдактар раздзелаў GParted"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Стварыць, пераразмеркаваць або выдаліць раздзелы"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr "GParted — свабодны рэдактар раздзелаў дыска з графічным інтэрфейсам."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -44,7 +44,7 @@ msgstr ""
 "павялічыць раздзел «C:», вызваліць прастору для новых аперацыйных сістэм, а "
 "таксама аднавіць даныя са страчаных раздзелаў."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: bcachefs, btrfs, exfat, "
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
@@ -54,29 +54,29 @@ msgstr ""
 "btrfs, ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, "
 "minix, nilfs2, ntfs, reiserfs, reiser4, udf, ufs і xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "The GParted Project"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:91 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:91 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Рэдактар раздзелаў"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partition;Раздзел;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Запусціць GParted ад імя суперкарыстальніка"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Для запуску GParted ад імя суперкарыстальніка патрабуецца аўтэнтыфікацыя"
@@ -525,7 +525,7 @@ msgstr ""
 "Для таго, каб атрымаць дапамогу, неабходна падаць захаваныя падрабязнасці!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:304
 msgid "See %1 for more information."
@@ -797,12 +797,12 @@ msgstr "_Прымантаваць"
 msgid "_Unmount"
 msgstr "_Адмантаваць"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:93
 msgid "Created directory %1"
 msgstr "Каталог %1 створаны"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:119
 msgid "Removed directory %1"
 msgstr "Каталог %1 выдалены"
@@ -1977,8 +1977,8 @@ msgid "Documentation is not available"
 msgstr "Дакументацыя недаступная"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
-msgstr "У гэтай зборцы gparted адсутнічае дакументацыя."
+msgid "This build of wayparted is configured without documentation."
+msgstr "У гэтай зборцы wayparted адсутнічае дакументацыя."
 
 #: src/Win_GParted.cc:1867
 msgid "Documentation is available at the project web site."
@@ -2735,8 +2735,8 @@ msgstr "mkudffs да версіі 1.1 не падтрымлівае не ASCII �
 #~ msgid "Clear Partition Label on %1"
 #~ msgstr "Clear Partition Label on %1"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# Temporary file created by wayparted.  It may be deleted.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "Label operation failed:  Unable to write to temporary file %1.\n"
@@ -2852,9 +2852,9 @@ msgstr "mkudffs да версіі 1.1 не падтрымлівае не ASCII �
 #~ msgid "Sorry, not yet implemented."
 #~ msgstr "Sorry, not yet implemented."
 
-#~ msgid "Please visit http://gparted.sf.net for more information and support."
+#~ msgid "Please visit http://wayparted.sf.net for more information and support."
 #~ msgstr ""
-#~ "Please visit http://gparted.sf.net for more information and support."
+#~ "Please visit http://wayparted.sf.net for more information and support."
 
 #~ msgid "Are you sure you want to create a %1 disklabel on %2?"
 #~ msgstr "Are you sure you want to create a %1 disklabel on %2?"

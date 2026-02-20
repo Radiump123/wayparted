@@ -58,8 +58,8 @@ int main( int argc, char *argv[] )
 	//deal with arguments..
 	std::vector<Glib::ustring> user_devices(argv + 1, argv + argc);
 	
-	GParted::Win_GParted win_gparted( user_devices ) ; 
-	Gtk::Main::run( win_gparted ) ;
+	GParted::Win_GParted win_wayparted( user_devices ) ; 
+	Gtk::Main::run( win_wayparted ) ;
 
 	return EXIT_SUCCESS;
 }

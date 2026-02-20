@@ -1,14 +1,14 @@
-# Finnish messages for gparted
+# Finnish messages for wayparted
 # Copyright (C) 2005-2008 Ilkka Tuohela.
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Ilkka Tuohela <hile@iki.fi>, 2005-2008.
 # Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
 # Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2010, 2013, 2015, 2016, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2021-04-25 16:09+0000\n"
 "PO-Revision-Date: 2021-05-01 15:08+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
@@ -20,15 +20,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted - levyosioiden muokkain"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Luo, järjestele ja poista osioita"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -36,7 +36,7 @@ msgstr ""
 "GParted on sovellus levyjen ja osioiden hallintaan. GParted on vapaa "
 "ohjelmisto."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -47,7 +47,7 @@ msgstr ""
 "pienentää osion kokoa, luoda vapaata tilaa uudelle käyttöjärjestelmälle tai "
 "yrittää palauttaa tietoja poistetuilta osioilta."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -58,24 +58,24 @@ msgstr ""
 "ntfs, reiserfs, reiser4, udf, ufs ja xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:88
 #: ../src/Win_GParted.cc:1635 ../src/Win_GParted.cc:1860
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Levyosioiden muokkain"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Osio;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Suorita GParted root-käyttäjänä"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Tunnistautuminen vaaditaa GParted-osiomuokkaimen suorittamiseksi root-"
@@ -524,7 +524,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Jos haluat tukea, sinun täytyy toimittaa tallennetut yksityiskohdat"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -858,7 +858,7 @@ msgstr "Virhe:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Tiedostojärjestelmä on liitetty:"
@@ -916,12 +916,12 @@ msgstr "_Liitä"
 msgid "_Unmount"
 msgstr "_Irrota"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Luotiin hakemisto %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Poistettiin hakemisto %1"
@@ -2086,8 +2086,8 @@ msgid "Documentation is not available"
 msgstr "Ohjeistusta ei ole saatavilla"
 
 #: ../src/Win_GParted.cc:1842
-msgid "This build of gparted is configured without documentation."
-msgstr "Tämä gparted on koostettu ilman dokumentaatiota."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Tämä wayparted on koostettu ilman dokumentaatiota."
 
 #: ../src/Win_GParted.cc:1844
 msgid "Documentation is available at the project web site."
@@ -2774,7 +2774,7 @@ msgstr ""
 #~ msgid "read %1 sectors using a blocksize of %2 sectors"
 #~ msgstr "lue %1 sektoria käyttäen lohkokokona %2 sektoria"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
 #~ msgstr ""
 #~ "# Gpartedin luoma väliaikaistiedosto. Voit poistaa tämän jos haluat.\n"
 

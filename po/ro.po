@@ -1,12 +1,12 @@
-# Romanian translation for gparted
+# Romanian translation for wayparted
 # Copyright (c) 2006 Rosetta Contributors and Canonical Ltd 2006
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010, 2011.
 # Daniel Șerbănescu <daniel [at] serbanescu [dot] dk>, 2011-2015, 2016, 2017, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2023-10-04 16:25+0000\n"
 "PO-Revision-Date: 2023-10-21 15:28+0300\n"
 "Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
@@ -21,15 +21,15 @@ msgstr ""
 "X-Generator: Poedit 3.4\n"
 "X-Project-Style: gnome\n"
 
-#: gparted.appdata.xml.in:7
+#: wayparted.appdata.xml.in:7
 msgid "GParted Partition Editor"
 msgstr "GParted - Editor de partiții"
 
-#: gparted.appdata.xml.in:8 gparted.desktop.in.in:6
+#: wayparted.appdata.xml.in:8 wayparted.desktop.in.in:6
 msgid "Create, reorganize, and delete partitions"
 msgstr "Creează, reorganizează și șterge partiții"
 
-#: gparted.appdata.xml.in:10
+#: wayparted.appdata.xml.in:10
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -37,7 +37,7 @@ msgstr ""
 "GParted este un editor de partiții liber pentru a administra în mod grafic "
 "partițiile dumneavoastră de disc."
 
-#: gparted.appdata.xml.in:14
+#: wayparted.appdata.xml.in:14
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -48,7 +48,7 @@ msgstr ""
 "C:, să creați spațiu pentru un sisteme noi de operare, sau să încercați "
 "recuperări de date de pe partiții pierdute."
 
-#: gparted.appdata.xml.in:20
+#: wayparted.appdata.xml.in:20
 msgid ""
 "GParted works with many file systems including: btrfs, exfat, ext2, ext3, "
 "ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, "
@@ -58,29 +58,29 @@ msgstr ""
 "ext2, ext3, ext4, fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, "
 "nilfs2, ntfs, reiserfs, reiser4, udf, ufs, și xfs."
 
-#: gparted.appdata.xml.in:37
+#: wayparted.appdata.xml.in:37
 msgid "The GParted Project"
 msgstr "Proiectul GParted"
 
 #. ==== GUI =========================
-#: gparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
+#: wayparted.desktop.in.in:3 src/Win_GParted.cc:89 src/Win_GParted.cc:1654
 #: src/Win_GParted.cc:1883
 msgid "GParted"
 msgstr "GParted"
 
-#: gparted.desktop.in.in:4
+#: wayparted.desktop.in.in:4
 msgid "Partition Editor"
 msgstr "Editor de partiții"
 
-#: gparted.desktop.in.in:12
+#: wayparted.desktop.in.in:12
 msgid "Partition;"
 msgstr "Partiție;"
 
-#: org.gnome.gparted.policy.in.in:11
+#: org.gnome.wayparted.policy.in.in:11
 msgid "Run GParted as root"
 msgstr "Rulează GParted ca root"
 
-#: org.gnome.gparted.policy.in.in:12
+#: org.gnome.wayparted.policy.in.in:12
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Autentificarea este necesară pentru a rula Editorul de partiții GParted ca "
@@ -530,7 +530,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Dacă doriți asistență, trebuie să trimiteți detaliile salvate!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -806,12 +806,12 @@ msgstr "_Montează"
 msgid "_Unmount"
 msgstr "Demontea_ză"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:270
 msgid "Created directory %1"
 msgstr "Dosarul %1 a fost creat"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: src/FileSystem.cc:296
 msgid "Removed directory %1"
 msgstr "Dosarul %1 a fost eliminat"
@@ -2001,8 +2001,8 @@ msgid "Documentation is not available"
 msgstr "Documentația nu este disponibilă"
 
 #: src/Win_GParted.cc:1865
-msgid "This build of gparted is configured without documentation."
-msgstr "Această instanță a gparted este construită fără documentație."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Această instanță a wayparted este construită fără documentație."
 
 #: src/Win_GParted.cc:1867
 msgid "Documentation is available at the project web site."
@@ -2818,8 +2818,8 @@ msgstr ""
 #~ msgid "perform real move"
 #~ msgstr "efectuează mutarea adevărată"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# Fișier temporar creat de gparted. Poate fi șters.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# Fișier temporar creat de wayparted. Poate fi șters.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr "Etichetarea a eșuat: Nu s-a putut scrie în fișierul temporar %1.\n"

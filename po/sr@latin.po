@@ -1,11 +1,11 @@
-# Serbian translation for gparted
+# Serbian translation for wayparted
 # Copyright © 2009 Rosetta Contributors and Canonical Ltd 2009
-# This file is distributed under the same license as the gparted package.
+# This file is distributed under the same license as the wayparted package.
 # Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2010—2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2018-01-02 17:40+0000\n"
 "PO-Revision-Date: 2018-02-17 23:24+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../gparted.appdata.xml.in.h:1
+#: ../wayparted.appdata.xml.in.h:1
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
@@ -26,7 +26,7 @@ msgstr ""
 "Gparted je slobodan uređivač particija za grafičko upravljanje particijama "
 "vašeg diska."
 
-#: ../gparted.appdata.xml.in.h:2
+#: ../wayparted.appdata.xml.in.h:2
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -38,7 +38,7 @@ msgstr ""
 "operativne sisteme, ili da pokušate da spasite podatke sa izgubljenih "
 "particija."
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, nilfs2, ntfs, reiserfs, "
@@ -49,33 +49,33 @@ msgstr ""
 "reiser4, udf, ufs, xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:371
+#: ../wayparted.desktop.in.in.h:1 ../src/Dialog_Progress.cc:371
 #: ../src/Win_GParted.cc:81 ../src/Win_GParted.cc:1480
 #: ../src/Win_GParted.cc:1675
 msgid "GParted"
 msgstr "Gparted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Uređivač particija"
 
-#: ../gparted.desktop.in.in.h:3
+#: ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "Uređivač particija Gparted"
 
-#: ../gparted.desktop.in.in.h:4
+#: ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Stvarajte, reorganizujte i brišite particije"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "particija;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Pokrenite Gparted kao administrator"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Potrebno je potvrđivanje identiteta za pokretanje Gparteda kao administrator"
@@ -501,7 +501,7 @@ msgstr "VAŽNO"
 msgid "If you want support, you need to provide the saved details!"
 msgstr "Ukoliko želite podršku, treba da nam dostavite sačuvane detalje!"
 
-#. TO TRANSLATORS: looks like   See http://gparted.org/save-details.htm for more information.
+#. TO TRANSLATORS: looks like   See http://wayparted.org/save-details.htm for more information.
 #: ../src/Dialog_Progress.cc:287
 msgid "See %1 for more information."
 msgstr "Pogledajte „%1“ za više informacija."
@@ -772,7 +772,7 @@ msgstr "Greška:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:237
 msgid "The file system is mounted on:"
 msgstr "Sistem datoteka je montiran na:"
@@ -830,12 +830,12 @@ msgstr "_Prikači"
 msgid "_Unmount"
 msgstr "_Otkači"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:225
 msgid "Created directory %1"
 msgstr "Napravio sam direktorijum %1"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:251
 msgid "Removed directory %1"
 msgstr "Uklonio sam direktorijum %1"
@@ -1997,8 +1997,8 @@ msgid "Documentation is not available"
 msgstr "Dokumentacija nije dostupna"
 
 #: ../src/Win_GParted.cc:1658
-msgid "This build of gparted is configured without documentation."
-msgstr "Ovo izdanje gparteda je podešeno bez dokumentacije."
+msgid "This build of wayparted is configured without documentation."
+msgstr "Ovo izdanje wayparteda je podešeno bez dokumentacije."
 
 #: ../src/Win_GParted.cc:1660
 msgid "Documentation is available at the project web site."

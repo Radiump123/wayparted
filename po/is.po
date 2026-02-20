@@ -1,12 +1,12 @@
-# translation of gparted.master.po to Icelandic
+# translation of wayparted.master.po to Icelandic
 # Copyright (C) 2009
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Sveinn í Felli <sveinki@nett.is>, 2009, 2015, 2016, 2019, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: gparted.master\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gparted/issues\n"
+"Project-Id-Version: wayparted.master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/wayparted/issues\n"
 "POT-Creation-Date: 2019-10-02 08:36+0000\n"
 "PO-Revision-Date: 2020-01-10 18:24+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: ../gparted.appdata.xml.in.h:1 ../gparted.desktop.in.in.h:3
+#: ../wayparted.appdata.xml.in.h:1 ../wayparted.desktop.in.in.h:3
 msgid "GParted Partition Editor"
 msgstr "GParted disksneiðastjórinn"
 
-#: ../gparted.appdata.xml.in.h:2 ../gparted.desktop.in.in.h:4
+#: ../wayparted.appdata.xml.in.h:2 ../wayparted.desktop.in.in.h:4
 msgid "Create, reorganize, and delete partitions"
 msgstr "Búa til, raða og eyða disksneiðum"
 
-#: ../gparted.appdata.xml.in.h:3
+#: ../wayparted.appdata.xml.in.h:3
 msgid ""
 "GParted is a free partition editor for graphically managing your disk "
 "partitions."
 msgstr ""
 "GParted er frjáls disksneiðastjóri til að sýsla myndrænt með disksneiðar."
 
-#: ../gparted.appdata.xml.in.h:4
+#: ../wayparted.appdata.xml.in.h:4
 msgid ""
 "With GParted you can resize, copy, label, and move partitions without data "
 "loss. These actions enable you to grow or shrink your C: drive, create space "
@@ -44,7 +44,7 @@ msgstr ""
 "minnka C: drifið, búa til pláss fyrir ný stýrikerfi, eða að reyna björgun "
 "gagna af týndum disksneiðum."
 
-#: ../gparted.appdata.xml.in.h:5
+#: ../wayparted.appdata.xml.in.h:5
 msgid ""
 "GParted works with many file systems including: btrfs, ext2, ext3, ext4, "
 "fat16, fat32, hfs, hfs+, linux-swap, lvm2 pv, minix, nilfs2, ntfs, reiserfs, "
@@ -55,24 +55,24 @@ msgstr ""
 "reiser4, ufs, og xfs."
 
 #. ==== GUI =========================
-#: ../gparted.desktop.in.in.h:1 ../src/Win_GParted.cc:87
+#: ../wayparted.desktop.in.in.h:1 ../src/Win_GParted.cc:87
 #: ../src/Win_GParted.cc:1632 ../src/Win_GParted.cc:1857
 msgid "GParted"
 msgstr "GParted"
 
-#: ../gparted.desktop.in.in.h:2
+#: ../wayparted.desktop.in.in.h:2
 msgid "Partition Editor"
 msgstr "Disksneiðastjóri"
 
-#: ../gparted.desktop.in.in.h:5
+#: ../wayparted.desktop.in.in.h:5
 msgid "Partition;"
 msgstr "Disksneið;"
 
-#: ../org.gnome.gparted.policy.in.in.h:1
+#: ../org.gnome.wayparted.policy.in.in.h:1
 msgid "Run GParted as root"
 msgstr "Keyra GParted sem kerfisstjóri/root"
 
-#: ../org.gnome.gparted.policy.in.in.h:2
+#: ../org.gnome.wayparted.policy.in.in.h:2
 msgid "Authentication is required to run the GParted Partition Editor as root"
 msgstr ""
 "Auðkenningar er krafist til að keyra GParted disksneiðingarstjórann sem "
@@ -524,7 +524,7 @@ msgid "If you want support, you need to provide the saved details!"
 msgstr "Ef þú vilt fá hjálp þá verðurðu að gefa upp vistuð smáatriði!"
 
 #. TO TRANSLATORS: looks like
-#. * See https://gparted.org/save-details.htm for more information.
+#. * See https://wayparted.org/save-details.htm for more information.
 #.
 #: ../src/Dialog_Progress.cc:303
 msgid "See %1 for more information."
@@ -858,7 +858,7 @@ msgstr "Villa:"
 
 #. TO TRANSLATORS: looks like
 #. * The file system is mounted on:
-#. * /tmp/gparted-roview-Nlhb3R.
+#. * /tmp/wayparted-roview-Nlhb3R.
 #: ../src/Dialog_Rescue_Data.cc:234
 msgid "The file system is mounted on:"
 msgstr "Skráakerfið er tengt í:"
@@ -916,12 +916,12 @@ msgstr "_Tengja í skráarkerfi"
 msgid "_Unmount"
 msgstr "_Aftengja"
 
-#. TO TRANSLATORS: looks like   Created directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Created directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:230
 msgid "Created directory %1"
 msgstr "Bjó til %1 möppuna"
 
-#. TO TRANSLATORS: looks like   Removed directory /tmp/gparted-CEzvSp
+#. TO TRANSLATORS: looks like   Removed directory /tmp/wayparted-CEzvSp
 #: ../src/FileSystem.cc:256
 msgid "Removed directory %1"
 msgstr "Fjarlægði %1 möppuna"
@@ -2058,7 +2058,7 @@ msgid "Documentation is not available"
 msgstr "Engin hjálparskjöl eru finnanleg"
 
 #: ../src/Win_GParted.cc:1839
-msgid "This build of gparted is configured without documentation."
+msgid "This build of wayparted is configured without documentation."
 msgstr "Þessi útgáfa GParted er sett upp án hjálparskjala."
 
 #: ../src/Win_GParted.cc:1841
@@ -2734,8 +2734,8 @@ msgstr ""
 #~ msgid "Clear Partition Label on %1"
 #~ msgstr "Hreinsa merkið af disksneiðinni %1"
 
-#~ msgid "# Temporary file created by gparted.  It may be deleted.\n"
-#~ msgstr "# Bráðabirgðaskrá sem gparted bjó til . Þú mátt eyða henni.\n"
+#~ msgid "# Temporary file created by wayparted.  It may be deleted.\n"
+#~ msgstr "# Bráðabirgðaskrá sem wayparted bjó til . Þú mátt eyða henni.\n"
 
 #~ msgid "Label operation failed:  Unable to write to temporary file %1.\n"
 #~ msgstr ""
